@@ -2,39 +2,40 @@
 min-height: 44vh;
 }
 
-h1{
-font-style: ;
-font-size:20px;
-}
-h2{
-font-style: ;
-font-size:20px;
-}
-h3{
-font-style: ;
-font-size:20px;
-}
-
-#nuage3 h3{
-text-align: center;
-}
-
-#nuage6 h3{
-text-align: center;
-}
-
-#telephone{
-font-size:20px;
-}
-
-#nav-mobile ul {
-text-align: center;
-}
-
 #titre {
-color: blue;
-text-align: center;
+  font-family: 'Amatic SC', cursive;
+  color: #0C59CF;
+  text-align: center;
 }
+
+h1 {
+  font-size: 90px;
+}
+
+#telephone {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+}
+
+.nav-wrapper {
+  background-color: #6291CF
+}
+
+.nav-wrapper a {
+  font-family: 'Amatic SC', cursive;
+  color: #FFFFFF;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: 'Amatic SC', cursive;
+  color: #0C59CF;
+}
+
+p {
+  font-family: 'Poiret One', cursive;
+}
+
 
 .nuagehaut{
 position:absolute;
