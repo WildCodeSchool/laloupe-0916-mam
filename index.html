@@ -2,111 +2,216 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>
-            La M.A.M aux trésors - Rémalard-en-Perche
-        </title>
+        <link href="style.css" rel="stylesheet">
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-        <!-- Entête -->
-        <div id="titre">
-            <img src="" alt="">
-            <h1>LA MAM AUX TRÉSORS</h1>
-            <h2>3 place du Champ de Foire 61 100 RÉMALRD-EN-PERCHE</h2>
-            <h3><img src="" alt=""/>
-                02.00.00.00.00</h3>
+
+        <header>
+            <div class="row">
+                <div id="titre" class="col s12">
+                    <img src="" alt="">
+                    <h1>LA MAM AUX TRÉSORS</h1>
+                    <h2>3 place du Champ de Foire 61 100 RÉMALARD-EN-PERCHE</h2>
+                    <p id="telephone"><img src="" alt=""/>
+                        02.00.00.00.00</p>
+                </div>
+            </div>
+
+            <nav>
+                <div class="nav-wrapper blue">
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="">Qui sommes-nous ?</a>
+                        </li>
+                        <li>
+                            <a href="">Nos locaux</a>
+                        </li>
+                        <li>
+                            <a href="">Actualités</a>
+                        </li>
+                        <li>
+                            <a href="">Infos pratiques</a>
+                        </li>
+                        <li>
+                            <a href="">Activités</a>
+                        </li>
+                        <li>
+                            <a href="">Partenaires</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="parallax-container">
+            <div class="parallax"><img src="comptine.jpg"></div>
+            <!-- Nuage1-->
+            <!-- Image haut du nuage 1 -->
+            <div class="nuagehaut">
+                <img src="nuageblanc.png">
+            </div>
         </div>
-        <!-- Barre de navigation -->
-        <nav>
-            <ul>
-                <li>Qui Sommes-Nous?</li>
-                <li>Locaux</li>
-                <li>Actualités</li>
-                <li>Infos pratiques</li>
-                <li>Activités</li>
-                <li>Partenaires</li>
-            </ul>
-        </nav>
         <!-- Nuage1 : Qui Sommes-Nous? -->
-        <div class="page container">
-            <!-- Nuage1 : Image bébé qui grandit-->
-            <img src="" alt=""/>
-            <!-- Nuage1 : Nuage-->
+        <div class="page container-fluid">
             <div id="nuage1" class="row">
                 <!-- Nuage1 : Carrousel -->
-                <div class="carrousel"></div>
+                <div class="carrousel col s4"></div>
                 <!-- Nuage1 : Encadré de droite -->
-                <div id="quisommesnous">
-                    <h4>Qui sommes-nous?</h4>
-                    <p></p>
+                <div id="quisommesnous" class="col s8">
+                    <h3>Qui sommes-nous?</h3>
+                    <p>bla bla bla</p>
+                    <p>bla bla bla</p>
                 </div>
             </div>
         </div>
-        <!-- Nuage2 : Locaux -->
-        <div class="page container">
-            <!-- Nuage2 : Image bébé qui grandit-->
-            <img src="" alt=""/>
-            <!-- Nuage2 : Nuage-->
+        <div class="parallax-container">
+            <!-- Image bas du nuage 1 -->
+            <div class="nuagebas">
+                <img src="nuageblancinverse.png">
+            </div>
+
+            <!-- Image parallax -->
+            <div class="parallax"><img src="table.jpg"></div>
+            <!-- Nuage 2-->
+            <!-- Image haut du nuage 2 -->
+            <div class="nuagehaut">
+                <img src="nuageblanc.png">
+            </div>
+        </div>
+        <div class="page container-fluid">
             <div id="nuage2" class="row">
                 <!-- Nuage2 : Carrousel -->
-                <div class="carrousel"></div>
+                <div class="carrousel col s4"></div>
                 <!-- Nuage2 : Encadré de gauche -->
-                <div id="locaux">
-                    <h4>Locaux</h4>
+                <div id="locaux" class="col s8">
+                    <h3>Locaux</h3>
                     <p></p>
                 </div>
             </div>
         </div>
-        <!-- Nuage3 : Actualités -->
-        <div class="page container">
-            <!-- Nuage3 : Image bébé qui grandit-->
-            <img src="" alt=""/>
-            <!-- Nuage3 : Nuage-->
+        <div class="parallax-container">
+            <!-- Image bas du nuage 2 -->
+            <div class="nuagebas">
+                <img src="nuageblancinverse.png">
+            </div>
+            <!-- Image parallax -->
+            <div class="parallax"><img src="lits.jpg"></div>
+
+            <!-- Nuage 3-->
+            <!-- Image haut du nuage 3 -->
+            <div class="nuagehaut">
+                <img src="nuageblanc.png">
+            </div>
+        </div>
+        <div class="page container-fluid">
             <div id="nuage3" class="row">
                 <!-- Nuage3 : Encadré avec les actualités Facebook -->
                 <div id="actualités">
-                    <h4>Actualités</h4>
+                    <h3>Actualités</h3>
                 </div>
             </div>
         </div>
-        <!-- Nuage4: Infos pratiques -->
-        <div class="page container">
-            <!-- Nuage4 : Image bébé qui grandit-->
-            <img src="" alt=""/>
-            <!-- Nuage4 : Nuage-->
+        <div class="parallax-container">
+            <!-- Image bas du nuage 3 -->
+            <div class="nuagebas">
+                <img src="nuageblancinverse.png">
+            </div>
+            <!-- Image parallax -->
+            <div class="parallax"><img src="comptine.jpg"></div>
+
+            <!-- Nuage 4 : Infos pratiques -->
+            <!-- Image haut du nuage 4 -->
+            <div class="nuagehaut">
+                <img src="nuageblanc.png">
+            </div>
+        </div>
+        <div class="page container-fluid">
             <div id="nuage4" class="row">
                 <!-- Nuage4 : Trois icones présnetant les horaires, les tarifs, les services -->
                 <div id="infospratiques">
-                    <h4>Actualités</h4>
+                    <h3>Infos pratiques</h3>
                 </div>
             </div>
         </div>
-        <!-- Nuage5: Activités -->
-        <div class="page container">
-            <!-- Nuage5 : Image bébé qui grandit-->
-            <img src="" alt=""/>
-            <!-- Nuage5 : Nuage-->
+
+        <div class="parallax-container">
+            <!-- Image bas du nuage 4 -->
+            <div class="nuagebas">
+                <img src="nuageblancinverse.png">
+            </div>
+            <!-- Image parallax -->
+            <div class="parallax"><img src="table.jpg"></div>
+
+            <!-- Nuage 5 : Activités -->
+            <!-- Image haut du nuage 5 -->
+            <div class="nuagehaut">
+                <img src="nuageblanc.png">
+            </div>
+        </div>
+        <div class="page container-fluid">
             <div id="nuage5" class="row">
                 <!-- Nuage5 : Carrousel -->
                 <div class="carrousel"></div>
                 <!-- Nuage5 : Encadré avec le descriptif des activités positionné à gauche -->
                 <div id="activites">
-                    <h4>Nos activités</h4>
+                    <h3>Nos activités</h3>
                 </div>
             </div>
         </div>
-        <!-- Nuage6: Partenaires -->
-        <div class="page container">
-            <!-- Nuage6 : Image bébé qui grandit-->
-            <img src="" alt=""/>
-            <!-- Nuage6 : Nuage-->
+        <div class="parallax-container">
+            <!-- Image bas du nuage 5 -->
+            <div class="nuagebas">
+                <img src="nuageblancinverse.png">
+            </div>
+            <!-- Image parallax -->
+            <div class="parallax"><img src="lits.jpg"></div>
+            <!-- Nuage 6 : Partenaires-->
+            <!-- Image haut du nuage 6 -->
+            <div class="nuagehaut">
+                <img src="nuageblanc.png">
+            </div>
+        </div>
+        <div class="page container-fluid">
             <div id="nuage6" class="row">
                 <!-- Nuage6 : Partenaires contient les logos et un titre en dessous WESH GROS -->
                 <div id="partenaires">
-                    <h4>Partenaires</h4>
+                    <h3>Partenaires</h3>
                 </div>
             </div>
         </div>
-        
+
+        <div class="parallax-container">
+            <!-- Image bas du nuage 6 -->
+            <div class="nuagebas">
+                <img src="nuageblancinverse.png">
+            </div>
+            <!-- Image parallax -->
+            <div class="parallax"><img src="lits.jpg"></div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="page-footer blue">
+
+
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
