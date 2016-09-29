@@ -1,16 +1,50 @@
-.navbar-yellow {
-    background-color: #FFF94D;
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    border-radius: 0;
-    border-bottom: 2px solid black;
+.page{
+min-height: 44vh;
 }
-.navbar-brand img {
-    max-height: 100%;
-    transition: 0.8s;
+
+#titre {
+  font-family: 'Amatic SC', cursive;
+  color: #0C59CF;
+  text-align: center;
 }
-.navbar-brand:hover img {
-    transform: rotate(360deg);
+
+h1 {
+  font-size: 90px;
+}
+
+#telephone {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+}
+
+.nav-wrapper {
+  background-color: #6291CF
+}
+
+.nav-wrapper a {
+  font-family: 'Amatic SC', cursive;
+  color: #FFFFFF;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: 'Amatic SC', cursive;
+  color: #0C59CF;
+}
+
+p {
+  font-family: 'Poiret One', cursive;
+}
+
+
+.nuagehaut{
+position:absolute;
+bottom:0;
+margin-bottom:-6px;
+}
+
+.nuagebas{
+position:absolute;
+top:0;
+margin-top:-6px;
 }

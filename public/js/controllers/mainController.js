@@ -1,9 +1,11 @@
 class mainController {
 
-    constructor(todoService) {
-        this.todoService = todoService;
-        this.load();
+    constructor() {
+        /*this.todoService = todoService;
+        this.load();*/
+        $('.parallax').parallax();
     }
+  /*
 
     load() {
         this.todoService.getAll().then((res) => {
@@ -29,5 +31,5 @@ class mainController {
             this.load()
         })
     }
-
+*/
 }

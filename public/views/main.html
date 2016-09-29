@@ -1,23 +1,140 @@
-<div class="row">
-    <div class="col-xs-12 col-md-10 col-md-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-        <h2>Create a new todo</h2>
-        <form class="form-inline">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Todo" ng-model='vm.todo'>
-            </div>
-            <button ng-click='vm.create()' class="btn btn-default">Add</button>
-        </form>
-        <h2 ng-show='vm.todos.length>0'>My todos</h2>
-        <div class="panel panel-default" ng-repeat='todo in vm.todos | orderBy: "description"'>
-            <div class="panel-body">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Todo" ng-model='todo.description'>
-                    </div>
-                    <button ng-click='vm.update(todo)' class="btn btn-default">Edit</button>
-                    <button ng-click='vm.delete(todo)' class="btn btn-danger">Delete</button>
-                </form>
-            </div>
+<div class="parallax-container">
+    <div class="parallax"><img src="assets/img/comptine.jpg"></div>
+    <!-- Nuage1-->
+    <!-- Image haut du nuage 1 -->
+    <div class="nuagehaut">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+</div>
+<!-- Nuage1 : Qui Sommes-Nous? -->
+<div class="page container-fluid">
+    <div id="nuage1" class="row">
+        <!-- Nuage1 : Carrousel -->
+        <div class="carrousel col s4"></div>
+        <!-- Nuage1 : Encadré de droite -->
+        <div id="quisommesnous" class="col s8">
+            <h3>Qui sommes-nous?</h3>
         </div>
     </div>
+</div>
+<div class="parallax-container">
+    <!-- Image bas du nuage 1 -->
+    <div class="nuagebas">
+        <img src="assets/img/nuageblancinverse.png">
+    </div>
+    <!-- Image parallax -->
+    <div class="parallax"><img src="assets/img/table.jpg">
+    </div>
+    <!-- Nuage 2-->
+    <!-- Image haut du nuage 2 -->
+    <div class="nuagehaut">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+</div> 
+<div class="page container-fluid">
+    <div id="nuage2" class="row">
+        <!-- Nuage2 : Carrousel -->
+        <div class="carrousel col s4"></div>
+        <!-- Nuage2 : Encadré de gauche -->
+        <div id="locaux" class="col s8">
+            <h3>Locaux</h3>
+            <p></p>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <!-- Image bas du nuage 2 -->
+    <div class="nuagebas">
+        <img src="assets/img/nuageblancinverse.png">
+    </div>
+    <!-- Image parallax -->
+    <div class="parallax"><img src="assets/img/lits.jpg">
+    </div>
+    <!-- Nuage 3-->
+    <!-- Image haut du nuage 3 -->
+    <div class="nuagehaut">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+</div>
+<div class="page container-fluid">
+    <div id="nuage3" class="row">
+        <!-- Nuage3 : Encadré avec les actualités Facebook -->
+        <div id="actualités">
+            <h3>Actualités</h3>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <!-- Image bas du nuage 3 -->
+    <div class="nuagebas">
+        <img src="assets/img/nuageblancinverse.png">
+    </div>
+    <!-- Image parallax -->
+    <div class="parallax"><img src="assets/img/train.jpg"></div>
+    <!-- Nuage 4-->
+    <!-- Image haut du nuage 4 -->
+    <div class="nuagehaut">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+</div>
+<div class="page container-fluid">
+    <div id="nuage4" class="row">
+        <!-- Nuage4 : Trois icones présentant les horaires, les tarifs, les services -->
+        <div id="infospratiques">
+            <h3>Infos pratiques</h3>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <!-- Image bas du nuage 4 -->
+    <div class="nuagebas">
+        <img src="assets/img/nuageblancinverse.png">
+    </div>
+    <!-- Image parallax -->
+    <div class="parallax"><img src="assets/img/table.jpg"></div>
+
+    <!-- Nuage 5 : Activités -->
+    <!-- Image haut du nuage 5 -->
+    <div class="nuagehaut">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+</div>
+<div class="page container-fluid">
+    <div id="nuage5" class="row">
+        <!-- Nuage5 : Carrousel -->
+        <div class="carrousel"></div>
+        <!-- Nuage5 : Encadré avec le descriptif des activités positIMG/dessin.pngionné à gauche -->
+        <div id="activites">
+            <h3>Nos activités</h3>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <!-- Image bas du nuage 5 -->
+    <div class="nuagebas">
+        <img src="assets/img/nuageblancinverse.png">
+    </div>
+    <!-- Image parallax -->
+    <div class="parallax"><img src="assets/img/salle.jpg"></div>
+    <!-- Nuage 6 : Partenaires-->
+    <!-- Image haut du nuage 6 -->
+    <div class="nuagehaut">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+</div>
+<div class="page container-fluid">
+    <div id="nuage6" class="row">
+        <!-- Nuage6 : Partenaires contient les logos et un titre en dessous WESH GROS -->
+        <div id="partenaires">
+            <h3>Partenaires</h3>
+        </div>
+    </div>
+</div>
+<div class="parallax-container">
+    <!-- Image bas du nuage 6 -->
+    <div class="nuagebas">
+        <img src="assets/img/nuageblancinverse.png">
+    </div>
+    <!-- Image parallax -->
+    <div class="parallax"><img src="assets/img/kitchen.jpg"></div>
 </div>
