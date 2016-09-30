@@ -55,5 +55,4 @@ class loginController {
             this.loginMessage.message = res.data
         });
     }
-
 }

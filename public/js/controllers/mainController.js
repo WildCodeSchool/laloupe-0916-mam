@@ -3,8 +3,24 @@ class mainController {
     constructor() {
         /*this.todoService = todoService;
         this.load();*/
-        $('.parallax').parallax();
     }
+
+carouselparallax(){
+$('.parallax').parallax();
+$('.carousel.carousel-slider').carousel({
+  full_width: true
+
+});
+
+autoplay();
+
+function autoplay(){
+  $('.carousel').carousel('next');
+  setTimeout(autoplay, 4500);
+}
+}
+
+
   /*
 
     load() {
