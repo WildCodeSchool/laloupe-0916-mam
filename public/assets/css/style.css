@@ -1,50 +1,90 @@
-.page{
-min-height: 44vh;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    min-height: 44vh;
 }
 
 #titre {
-  font-family: 'Amatic SC', cursive;
-  color: #0C59CF;
-  text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: #0C59CF;
+    text-align: center;
 }
 
 h1 {
-  font-size: 90px;
+    font-size: 90px;
+    margin: 15px 0 15px 0;
 }
 
-#telephone {
-  font-family: 'Amatic SC', cursive;
-  font-size: 50px;
-}
-
-.nav-wrapper {
-  background-color: #6291CF
-}
-
-.nav-wrapper a {
-  font-family: 'Amatic SC', cursive;
-  color: #FFFFFF;
-  font-size: 35px;
+h2 {
+    font-size: 60px;
+    margin: 0;
 }
 
 h3 {
-  font-family: 'Amatic SC', cursive;
-  color: #0C59CF;
+    font-family: 'Amatic SC', cursive;
+    color: #0C59CF;
+}
+
+#telephone {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+
+.nav-wrapper {
+    background-color: #6291CF
+}
+
+.nav-wrapper a {
+    font-family: 'Amatic SC', cursive;
+    color: #FFFFFF;
+    font-size: 35px;
 }
 
 p {
-  font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One', cursive;
 }
 
-
-.nuagehaut{
-position:absolute;
-bottom:0;
-margin-bottom:-6px;
+#nuage1 h3 {
+    text-align: center;
 }
 
-.nuagebas{
-position:absolute;
-top:0;
-margin-top:-6px;
+#nuage2 h3 {
+    text-align: center;
+}
+
+#nuage3 {
+    text-align: center;
+}
+
+#nuage4 h3 {
+    text-align: center;
+}
+
+#nuage5 h3 {
+    text-align: center;
+}
+
+#nuage6 h3 {
+    text-align: center;
+}
+
+.nuagehaut {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -6px;
+}
+
+.nuagebas {
+    position: absolute;
+    top: 0;
+    margin-top: -6px;
+}
+
+footer {
+    min-height: 50px;
+    color: #6291CF;
+    font-size: 20px;
 }
