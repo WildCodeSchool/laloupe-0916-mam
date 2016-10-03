@@ -5,19 +5,22 @@ class mainController {
         this.load();*/
     }
 
-    carouselparallax() {
-    $('.parallax').parallax();
-    $('.carousel.carousel-slider').carousel({
-        full_width: true
-    });
+carouselparallax(){
+$('.parallax').parallax();
+$('.carousel.carousel-slider').carousel({
+  full_width: true
 
-    autoplay();
+});
 
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 4500);
-    }
-    }
+autoplay();
+
+function autoplay(){
+  $('.carousel').carousel('next');
+  setTimeout(autoplay, 4500);
+}
+}
+
+
   /*
 
     load() {
