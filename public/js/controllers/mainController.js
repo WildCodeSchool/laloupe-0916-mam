@@ -1,8 +1,6 @@
 class mainController {
 
     constructor() {
-        /*this.todoService = todoService;
-        this.load();*/
     }
 
     carouselparallax() {
