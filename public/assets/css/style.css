@@ -77,14 +77,13 @@ color: white;
     margin-top: -6px;
 }
 
-footer {
-    min-height: 50px;
-    color: #6291CF;
-    font-size: 20px;
+.carouselleft{
+margin: 112px 30px 30px 30px;
+border: 5px solid #6291CF;
 }
 
-.carousel{
-margin: 112px 30px 30px 30px;
+.carouselright{
+margin: 112px 30px 30px -30px;
 border: 5px solid #6291CF;
 }
 
