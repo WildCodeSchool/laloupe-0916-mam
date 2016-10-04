@@ -19,8 +19,6 @@ function autoplay(){
   setTimeout(autoplay, 4500);
 }
 }
-
-
   /*
 
     load() {
