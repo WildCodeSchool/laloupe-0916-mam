@@ -18,13 +18,18 @@
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 80px;
     margin: 15px 0 15px 0;
     font-weight: bold;
+    color: #E84E0C;
+}
+
+h1 span{
+    color: #B814B2;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 50px;
     margin: 0;
 }
 
@@ -56,8 +61,19 @@ h3 {
     text-align: center;
 }
 
+.petitlogo {
+    width: 160px;
+    height: 120px;
+    position: absolute;
+    top: 85px;
+}
+.pimage {
+    width: 45px;
+    height: 45px;
+}
+
 p {
-    font-family: 'Poiret One', cursive;
+    font-family: 'PB814B2oiret One', cursive;
 }
 
 .cadre {
