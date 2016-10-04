@@ -5,23 +5,23 @@ class mainController {
         this.load();*/
     }
 
-carouselparallax(){
-$('.parallax').parallax();
-$('.carousel.carousel-slider').carousel({
-  full_width: true
+    carouselparallax() {
+        $('.parallax').parallax();
+        $('.carousel.carousel-slider').carousel({
+            full_width: true
 
-});
+        });
 
-autoplay();
+        autoplay();
 
-function autoplay(){
-  $('.carousel').carousel('next');
-  setTimeout(autoplay, 4500);
-}
-}
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 4500);
+        }
+    }
 
 
-  /*
+    /*
 
     load() {
         this.todoService.getAll().then((res) => {

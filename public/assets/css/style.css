@@ -3,72 +3,76 @@
     padding: 0;
 }
 
+.boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
+    text-align: center;
+}
+
 .page {
     min-height: 44vh;
 }
 
 #titre {
-font-family: 'Amatic SC', cursive;
-color: #0C59CF;
-text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: #0C59CF;
+    text-align: center;
 }
 
 h1 {
-font-size: 90px;
-margin: 15px 0 15px 0;
-font-weight: bold;
+    font-size: 90px;
+    margin: 15px 0 15px 0;
+    font-weight: bold;
 }
 
-h2{
-font-size: 60px;
-margin: 0;
+h2 {
+    font-size: 60px;
+    margin: 0;
 }
 
-#telephone{
-font-weight: bold;
+#telephone {
+    font-weight: bold;
 }
 
-.contact{
-font-family: 'Amatic SC', cursive;
-font-size: 45px;
-margin: 0;
+.contact {
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+    margin: 0;
 }
 
 .nav-wrapper {
-background-color: #6291CF;
+    background-color: #6291CF;
 }
 
 .nav-wrapper a {
-font-family: 'Amatic SC', cursive;
-color: #FFFFFF;
-font-size: 35px;
-font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 h3 {
-font-family: 'Amatic SC', cursive;
-color: #0C59CF;
-font-weight: bold;
-text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: #0C59CF;
+    font-weight: bold;
+    text-align: center;
 }
 
-p{
-font-family: 'Poiret One', cursive;
+p {
+    font-family: 'Poiret One', cursive;
 }
 
-.cadre{
-margin: 30px 30px 30px 30px;
-background-color: #0C59CF;
-padding : 10px 10px 10px 10px;
-border: 5px solid #6291CF;
-font-weight: bold;
-color: white;
+.cadre {
+    margin: 30px 30px 30px 30px;
+    background-color: #0C59CF;
+    padding: 10px 10px 10px 10px;
+    border: 5px solid #6291CF;
+    font-weight: bold;
+    color: white;
 }
 
 .nuagehaut {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: -6px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -6px;
 }
 
 .nuagebas {
@@ -77,23 +81,23 @@ color: white;
     margin-top: -6px;
 }
 
-.carouselleft{
-margin: 112px 30px 30px 30px;
-border: 5px solid #6291CF;
+.carouselleft {
+    margin: 112px 30px 30px 30px;
+    border: 5px solid #6291CF;
 }
 
-.carouselright{
-margin: 112px 30px 30px -30px;
-border: 5px solid #6291CF;
+.carouselright {
+    margin: 112px 30px 30px -30px;
+    border: 5px solid #6291CF;
 }
 
-footer{
-font-size: 20px;
-font-weight: bold;
-text-align: center;
-font-family: 'Poiret One', cursive;
-margin: 0;
-padding : 1px 1px 1px 1px;
-background-color: #6291CF;
-color: white;
+footer {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+    padding: 1px 1px 1px 1px;
+    background-color: #6291CF;
+    color: white;
 }

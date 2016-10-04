@@ -11,6 +11,11 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'loginController',
             controllerAs: 'vm'
         })
+        .when('/admin', {
+            templateUrl: 'views/admin.html',
+            controller: 'adminController',
+            controllerAs: 'vm'
+        })
         .otherwise({
             redirectTo: '/'
         })

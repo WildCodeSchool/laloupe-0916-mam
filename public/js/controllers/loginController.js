@@ -18,7 +18,7 @@ class loginController {
             this.sessionFactory.isLogged = true
             this.$rootScope.$emit('loginStatusChanged', true)
             this.loginMessage = null
-            this.$location.path('/')
+            this.$location.path('/admin')
         }).catch(() => {
             this.sessionFactory.isLogged = false
             this.$rootScope.$emit('loginStatusChanged', false)
