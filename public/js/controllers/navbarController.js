@@ -16,7 +16,7 @@ class navbarController {
                  var page = $(this).attr('href'); // Page cible
                  var speed = 1000; // Durée de l'animation (en ms)
                  $('html, body').animate({
-                     scrollTop: $(page).offset().top
+                     scrollTop: $(page).offset().top -150
                  }, speed); // Go
                  return false;
              });
