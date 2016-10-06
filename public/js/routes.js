@@ -16,6 +16,11 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'adminController',
             controllerAs: 'vm'
         })
+        .when('/addActivity', {
+            templateUrl: 'views/admin/addActivity.html',
+            controller: 'addActivity',
+            controllerAs: 'vm'
+        })
         .otherwise({
             redirectTo: '/'
         })

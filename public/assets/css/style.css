@@ -7,6 +7,12 @@
     text-align: center;
 }
 
+.fixed-top  {
+  top: 0;
+  position: fixed!important;
+  z-index: 4;
+}
+
 .page {
     min-height: 44vh;
 }
