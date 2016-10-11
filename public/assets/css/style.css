@@ -52,8 +52,25 @@ font-weight: bold;
 text-align: center;
 }
 
-p{
+h4 {
+  font-family: 'Amatic SC', cursive;
+  color: #A8C6FA;
+  background-color: #FFFFFF;
+  font-size: 35px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 65px;
+  padding: 0 5px 0 5px;
+}
+
+p {
 font-family: 'Poiret One', cursive;
+}
+
+.material-icons.orange600 {
+  color: #ff6d00;
 }
 
 .cadre{
@@ -65,16 +82,23 @@ font-weight: bold;
 color: white;
 }
 
+.borderLight {
+  border: 1px #A8C6FA solid;
+  padding: 20px 5px 5px 5px;
+}
+
 .nuagehaut {
   position: absolute;
   bottom: 0;
-  margin-bottom: -6px;
+  margin-bottom: -7px;
+  width: 100%;
 }
 
 .nuagebas {
     position: absolute;
     top: 0;
     margin-top: -6px;
+    width: 100%;
 }
 
 .carouselleft{
