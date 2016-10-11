@@ -34,10 +34,6 @@
     height: 45px;
 }
 
-p {
-    font-family: 'PB814B2oiret One', cursive;
-}
-
 .cadre {
     margin: 30px 30px 30px 30px;
     background-color: #0C59CF;
@@ -45,6 +41,7 @@ p {
     border: 5px solid #6291CF;
     font-weight: bold;
     color: white;
+}
 
 h1 {
     font-size: 80px;
@@ -109,15 +106,6 @@ font-family: 'Poiret One', cursive;
 
 .material-icons.orange600 {
   color: #ff6d00;
-}
-
-.cadre{
-margin: 30px 30px 30px 30px;
-background-color: #0C59CF;
-padding : 10px 10px 10px 10px;
-border: 5px solid #6291CF;
-font-weight: bold;
-color: white;
 }
 
 .borderLight {
