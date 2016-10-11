@@ -15,5 +15,9 @@ class adminController {
             $("#modifInfosPratiques").hide();
             $("#modifPartenaires").toggle("slow");
         });
+
+    }
+    addActivity() {
+      this.$location.path('/addActivity');
     }
 }

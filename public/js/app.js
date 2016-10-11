@@ -6,6 +6,8 @@ angular.module('app', ['ngRoute'])
         .controller('navbarController', navbarController)
         .controller('loginController', loginController)
         .controller('adminController', adminController)
+        .controller('addActivity', addActivity)
+        .directive('navbarFix',navbarFix)
         .config(routes)
         .run(loginStatus)
         ;
