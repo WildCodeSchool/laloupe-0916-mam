@@ -1,22 +1,13 @@
+/*Ensemble de la page*/
 * {
     margin: 0;
     padding: 0;
 }
 
-.boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
-    text-align: center;
-}
-
-.fixed-top  {
-  top: 0;
-  position: fixed!important;
-  z-index: 4;
-}
-
 .page {
     min-height: 44vh;
 }
-
+ /*Bannière présentation*/
 #titre {
     font-family: 'Amatic SC', cursive;
     color: #0C59CF;
@@ -29,22 +20,11 @@
     position: absolute;
     top: 85px;
 }
+
 .pimage {
     width: 45px;
     height: 45px;
 }
-
-p {
-    font-family: 'PB814B2oiret One', cursive;
-}
-
-.cadre {
-    margin: 30px 30px 30px 30px;
-    background-color: #0C59CF;
-    padding: 10px 10px 10px 10px;
-    border: 5px solid #6291CF;
-    font-weight: bold;
-    color: white;
 
 h1 {
     font-size: 80px;
@@ -53,7 +33,7 @@ h1 {
     color: #E84E0C;
 }
 
-h1 span{
+h1 span {
     color: #B814B2;
 }
 
@@ -72,6 +52,14 @@ h2 {
     margin: 0;
 }
 
+/*Barre de navigation*/
+.fixed-top {
+    top: 0;
+    position: fixed;
+    z-index: 4;
+}
+
+
 .nav-wrapper {
     background-color: #6291CF;
 }
@@ -83,53 +71,56 @@ h2 {
     font-weight: bold;
 }
 
+/*Intérieur des nuages*/
+
+.cadre {
+    margin: 30px 30px 30px 30px;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #A8C6FA;
+    font-weight: bold;
+    color: #A8C6FA;
+}
+
 h3 {
     font-family: 'Amatic SC', cursive;
     color: #0C59CF;
     font-weight: bold;
     text-align: center;
 }
-
 h4 {
-  font-family: 'Amatic SC', cursive;
-  color: #A8C6FA;
-  background-color: #FFFFFF;
-  font-size: 35px;
-  font-weight: bold;
-  display: inline-block;
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 65px;
-  padding: 0 5px 0 5px;
+    font-family: 'Amatic SC', cursive;
+    color: #A8C6FA;
+    background-color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 65px;
+    padding: 0 5px 0 5px;
 }
 
 p {
-font-family: 'Poiret One', cursive;
-}
-
-.material-icons.orange600 {
-  color: #ff6d00;
-}
-
-.cadre{
-margin: 30px 30px 30px 30px;
-background-color: #0C59CF;
-padding : 10px 10px 10px 10px;
-border: 5px solid #6291CF;
-font-weight: bold;
-color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
 }
 
 .borderLight {
-  border: 1px #A8C6FA solid;
-  padding: 20px 5px 5px 5px;
+    border: 1px #A8C6FA solid;
+    padding: 20px 5px 5px 5px;
 }
 
+.material-icons.orange600 {
+    color: #ff6d00;
+}
+
+/*Positionnement des nuages*/
 .nuagehaut {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: -7px;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -7px;
+    width: 100%;
 }
 
 .nuagebas {
@@ -139,6 +130,7 @@ color: white;
     width: 100%;
 }
 
+/*Carousels*/
 .carouselleft {
     margin: 112px 30px 30px 30px;
     border: 5px solid #6291CF;
@@ -148,7 +140,7 @@ color: white;
     margin: 112px 30px 30px -30px;
     border: 5px solid #6291CF;
 }
-
+/*Footer*/
 footer {
     font-size: 20px;
     font-weight: bold;
@@ -158,4 +150,9 @@ footer {
     padding: 1px 1px 1px 1px;
     background-color: #6291CF;
     color: white;
+}
+
+/*Partie admnistrable*/
+.boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
+    text-align: center;
 }

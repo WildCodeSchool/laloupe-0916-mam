@@ -22,7 +22,7 @@ class mainController {
 
 
     /*
-
+('.carousel-slider').slider({full_width: true})
     load() {
         this.todoService.getAll().then((res) => {
             this.todos = res.data;
