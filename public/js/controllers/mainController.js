@@ -6,22 +6,24 @@ class mainController {
     }
 
     carouselparallax() {
-        $('.parallax').parallax();
-        $('.carousel.carousel-slider').carousel({
-            full_width: true
-
-        });
-
-        autoplay();
-
-        function autoplay() {
-            $('.carousel').carousel('next');
-            setTimeout(autoplay, 4500);
-        }
-    }
+            $('.parallax').parallax();
 
 
-    /*
+            $('.carousel.carousel-slider').carousel({
+                    full_width: true
+
+                    });
+
+                        autoplay();
+
+                    function autoplay() {
+                        $('.carousel').carousel('next');
+                        setTimeout(autoplay, 4500);
+                    }
+                }
+
+
+                /*
 
     load() {
         this.todoService.getAll().then((res) => {
@@ -48,4 +50,4 @@ class mainController {
         })
     }
 */
-}
+            }

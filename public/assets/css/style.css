@@ -7,10 +7,10 @@
     text-align: center;
 }
 
-.fixed-top  {
-  top: 0;
-  position: fixed!important;
-  z-index: 4;
+.fixed-top {
+    top: 0;
+    position: fixed!important;
+    z-index: 4;
 }
 
 .page {
@@ -29,6 +29,7 @@
     position: absolute;
     top: 85px;
 }
+
 .pimage {
     width: 45px;
     height: 45px;
@@ -50,7 +51,7 @@ h1 {
     color: #E84E0C;
 }
 
-h1 span{
+h1 span {
     color: #B814B2;
 }
 
@@ -88,42 +89,56 @@ h3 {
 }
 
 h4 {
-  font-family: 'Amatic SC', cursive;
-  color: #A8C6FA;
-  background-color: #FFFFFF;
-  font-size: 35px;
-  font-weight: bold;
-  display: inline-block;
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 65px;
-  padding: 0 5px 0 5px;
+    font-family: 'Amatic SC', cursive;
+    color: #6291CF;
+    background-color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 65px;
+    padding: 0 5px 0 5px;
 }
 
 p {
-font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One', cursive;
+    font-size:17px;
+    color: #6291CF;
 }
 
 .material-icons.orange600 {
-  color: #ff6d00;
+    color: #ff6d00;
 }
 
 .borderLight {
-  border: 1px #A8C6FA solid;
-  padding: 20px 5px 5px 5px;
+    border: 1px #6291CF solid;
+    padding: 20px 5px 5px 5px;
 }
 
 .nuagehaut {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: -7px;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -7px;
+    width: 100%;
 }
 
 .nuagebas {
     position: absolute;
     top: 0;
     margin-top: -6px;
+    width: 100%;
+}
+
+.nuagehautadmin {
+
+    margin-bottom: -30px;
+    width: 100%;
+}
+
+.nuagebasadmin {
+
+    margin-top: -23px;
     width: 100%;
 }
 
@@ -135,6 +150,15 @@ font-family: 'Poiret One', cursive;
 .carouselright {
     margin: 112px 30px 30px -30px;
     border: 5px solid #6291CF;
+}
+
+.admninistration {
+    background-color: #b4d4ff;
+}
+
+.contenuAdmin {
+    background-color: white;
+    padding-bottom: 8px;
 }
 
 footer {
