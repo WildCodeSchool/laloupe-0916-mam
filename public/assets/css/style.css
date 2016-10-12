@@ -131,6 +131,7 @@ p {
 }
 
 /*Carousels*/
+
 .carouselleft {
     margin: 112px 30px 30px 30px;
     border: 5px solid #6291CF;
@@ -140,6 +141,7 @@ p {
     margin: 112px 30px 30px -30px;
     border: 5px solid #6291CF;
 }
+
 /*Footer*/
 footer {
     font-size: 20px;
@@ -155,4 +157,23 @@ footer {
 /*Partie admnistrable*/
 .boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
     text-align: center;
+}
+.nuagehautadmin {
+
+    margin-bottom: -30px;
+    width: 100%;
+}
+
+.nuagebasadmin {
+
+    margin-top: -23px;
+    width: 100%;
+}
+.admninistration {
+    background-color: #b4d4ff;
+}
+
+.contenuAdmin {
+    background-color: white;
+    padding-bottom: 8px;
 }
