@@ -100,7 +100,9 @@ h2 {
     border: 2px #A8C6FA solid;
 }
 
-
+.textmodal{
+    margin: 30px 30px 30px 30px;
+}
 .cadre {
     margin: 30px 30px 30px 30px;
     background-color: white;
