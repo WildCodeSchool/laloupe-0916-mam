@@ -3,7 +3,11 @@ class mainController {
     constructor() {
         /*this.todoService = todoService;
         this.load();*/
+
+
     }
+
+
 
     carouselparallax() {
         $('.parallax').parallax();
@@ -11,14 +15,19 @@ class mainController {
             full_width: true
 
         });
-
         autoplay();
 
         function autoplay() {
             $('.carousel').carousel('next');
             setTimeout(autoplay, 4500);
         }
+
+        $('.modal1').leanModal();
+        $('.modal2').leanModal();
+        $('.modal3').leanModal();
+        $('.modal4').leanModal();
     }
+
 
 
     /*
