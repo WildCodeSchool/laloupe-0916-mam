@@ -79,7 +79,8 @@ h2 {
     padding: 10px 10px 10px 10px;
     border: 2px solid #A8C6FA;
     font-weight: bold;
-    color: #A8C6FA;
+    color: #6291CF;
+    font-size: 16px;
 }
 
 h3 {
@@ -113,6 +114,9 @@ p {
 
 .material-icons.orange600 {
     color: #ff6d00;
+}
+.titresActivites {
+    font-size: 18px;
 }
 
 /*Positionnement des nuages*/
