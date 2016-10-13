@@ -12,7 +12,6 @@ class mainController {
     carouselparallax() {
             $('.parallax').parallax();
 
-        });
         autoplay();
 
         function autoplay() {
