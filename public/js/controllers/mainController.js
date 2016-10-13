@@ -10,9 +10,7 @@ class mainController {
 
 
     carouselparallax() {
-        $('.parallax').parallax();
-        $('.carousel.carousel-slider').carousel({
-            full_width: true
+            $('.parallax').parallax();
 
         });
         autoplay();
@@ -28,10 +26,8 @@ class mainController {
         $('.modal4').leanModal();
     }
 
+                /*
 
-
-    /*
-('.carousel-slider').slider({full_width: true})
     load() {
         this.todoService.getAll().then((res) => {
             this.todos = res.data;
@@ -57,4 +53,4 @@ class mainController {
         })
     }
 */
-}
+            }
