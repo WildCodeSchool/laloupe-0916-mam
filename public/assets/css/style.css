@@ -106,13 +106,17 @@ p {
     font-size: 18px;
 }
 
-.borderLight {
-    border: 1px #A8C6FA solid;
-    padding: 20px 5px 5px 5px;
+.material-icons {
+  position: relative;
+  margin-left: 35%;
 }
 
-.material-icons.orange600 {
-    color: #ff6d00;
+.material-icons.orangeColor {
+    color: #FF340D;
+}
+
+.material-icons.purpleColor {
+    color: #950094;
 }
 
 /*Positionnement des nuages*/
@@ -170,10 +174,22 @@ footer {
     width: 100%;
 }
 .admninistration {
-    background-color: #b4d4ff;
+    background-color: #B4D4FF;
 }
 
 .contenuAdmin {
     background-color: white;
     padding-bottom: 8px;
+}
+
+.btn-large.orangeColor {
+  background-color: #FF340D;
+}
+
+.btn-large.purpleColor {
+  background-color: #950094;
+}
+
+.btn-large.blueColor {
+  background-color: #2196F3;
 }
