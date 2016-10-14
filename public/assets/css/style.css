@@ -1,4 +1,5 @@
 /*Ensemble de la page*/
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,10 @@
 .page {
     min-height: 44vh;
 }
- /*Bannière présentation*/
+
+
+/*Bannière présentation*/
+
 #titre {
     font-family: 'Amatic SC', cursive;
     color: #0C59CF;
@@ -52,13 +56,14 @@ h2 {
     margin: 0;
 }
 
+
 /*Barre de navigation*/
+
 .fixed-top {
     top: 0;
     position: fixed;
     z-index: 4;
 }
-
 
 .nav-wrapper {
     background-color: #6291CF;
@@ -71,44 +76,47 @@ h2 {
     font-weight: bold;
 }
 
+
 /*Intérieur des nuages*/
-#Presentation{
+
+#Presentation {
     padding: 10px 10px 10px 10px;
     text-align: center;
     color: #6291CF;
     font-weight: bold;
 }
 
-#PresentationMAM{
+.PresentationMAM {
     text-align: center;
     color: #6291CF;
     font-weight: bold;
 }
-.imagemam{
-    width:200px;
+
+.imagemam {
+    width: 200px;
     height: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px #A8C6FA solid;
 }
 
-.imagemodal{
-    width:200px;
+.imagemodal {
+    width: 200px;
     height: 150px;
     margin-top: 20px;
     margin-bottom: 40px;
     border: 2px #A8C6FA solid;
 }
 
-
 .cadre {
     margin: 30px 30px 30px 30px;
     background-color: white;
     padding: 10px 10px 10px 10px;
-    border: 2px solid #A8C6FA;
+    /*border: 2px solid #A8C6FA;*/
     font-weight: bold;
-    color: #A8C6FA;
+    color: #6291CF;
     font-family: 'Poiret One', cursive;
+    font-size: 16px;
 }
 
 h3 {
@@ -119,6 +127,7 @@ h3 {
     padding: 0 0 5px 0;
     margin: 0;
 }
+
 h4 {
     font-family: 'Amatic SC', cursive;
     color: #A8C6FA;
@@ -132,11 +141,11 @@ h4 {
     padding: 0 5px 0 5px;
 }
 
-h5{
-   font-family: 'Poiret One', cursive;
-   color: #0C59CF;
-   font-size: 25px;
-   font-weight: bold;
+h5 {
+    font-family: 'Poiret One', cursive;
+    color: #0C59CF;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 p {
@@ -152,11 +161,39 @@ p {
 .material-icons.orange600 {
     color: #ff6d00;
 }
-.titresActivites {
-    font-size: 18px;
+
+.presentationActivites {
+    text-align: center;
+    color: #6291CF;
+    font-weight: bold;
 }
 
+.titresActivites {
+    font-size: 19px;
+}
+
+.descriptionActivite {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.presentationPartenaires {
+    text-align: center;
+    color: #6291CF;
+    font-weight: bold;
+}
+
+.imagePartenaires {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 2px #A8C6FA solid;
+}
+
+
 /*Positionnement des nuages*/
+
 .nuagehaut {
     position: absolute;
     bottom: 0;
@@ -171,6 +208,7 @@ p {
     width: 100%;
 }
 
+
 /*Carousels*/
 
 .carouselleft {
@@ -183,7 +221,9 @@ p {
     border: 5px solid #6291CF;
 }
 
+
 /*Footer*/
+
 footer {
     font-size: 20px;
     font-weight: bold;
@@ -195,36 +235,38 @@ footer {
     color: white;
 }
 
-#ML{
-    color: white;##6291CF
-    text-decoration: none;
+#ML {
+    color: white;
+    ##6291CF text-decoration: none;
 }
 
-#logowcs{
+#logowcs {
     height: 20px;
     width: 20px;
 }
 
+
 /*Partie admnistrable*/
+
 .boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
     text-align: center;
 }
-.nuagehautadmin {
 
+.nuagehautadmin {
     margin-bottom: -30px;
     width: 100%;
 }
 
 .nuagebasadmin {
-
     margin-top: -23px;
     width: 100%;
 }
+
 .admninistration {
     background-color: #b4d4ff;
 }
 
 .contenuAdmin {
     background-color: white;
-    padding-bottom: 8px;
+    padding-bottom: 30px;
 }

@@ -17,7 +17,4 @@ class adminController {
         });
 
     }
-    addActivity() {
-      this.$location.path('/addActivity');
-    }
 }
