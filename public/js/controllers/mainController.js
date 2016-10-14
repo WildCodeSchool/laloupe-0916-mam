@@ -3,25 +3,29 @@ class mainController {
     constructor() {
         /*this.todoService = todoService;
         this.load();*/
+
+
     }
+
+
 
     carouselparallax() {
             $('.parallax').parallax();
 
 
-            $('.carousel.carousel-slider').carousel({
-                    full_width: true
+        autoplay();
 
-                    });
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 4500);
+        }
 
-                        autoplay();
-
-                    function autoplay() {
-                        $('.carousel').carousel('next');
-                        setTimeout(autoplay, 4500);
-                    }
-                }
-
+        $('.modal1').leanModal();
+        $('.modal2').leanModal();
+        $('.modal3').leanModal();
+        $('.modal4').leanModal();
+        $('.modal5').leanModal();
+    }
 
                 /*
 
