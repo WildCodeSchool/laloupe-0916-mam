@@ -232,6 +232,7 @@ footer {
     text-align: center;
     font-family: 'Poiret One', cursive;
     margin: 0;
+    bottom:0;
     padding: 1px 1px 1px 1px;
     background-color: #2196f3;
     color: white;
