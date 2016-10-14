@@ -10,7 +10,7 @@
  /*Bannière présentation*/
 #titre {
     font-family: 'Amatic SC', cursive;
-    color: #0C59CF;
+    color: #2196f3;
     text-align: center;
 }
 
@@ -59,11 +59,6 @@ h2 {
     z-index: 4;
 }
 
-
-.nav-wrapper {
-    background-color: #6291CF;
-}
-
 .nav-wrapper a {
     font-family: 'Amatic SC', cursive;
     color: #FFFFFF;
@@ -75,13 +70,13 @@ h2 {
 #Presentation{
     padding: 10px 10px 10px 10px;
     text-align: center;
-    color: #6291CF;
+    color: #2196f3;
     font-weight: bold;
 }
 
-#PresentationMAM{
+.PresentationMAM{
     text-align: center;
-    color: #6291CF;
+    color: #2196f3;
     font-weight: bold;
 }
 .imagemam{
@@ -93,10 +88,10 @@ h2 {
 }
 
 .imagemodal{
-    width:200px;
-    height: 150px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    width:300px;
+    height: 225px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: 2px #A8C6FA solid;
 }
 
@@ -107,15 +102,14 @@ h2 {
     margin: 30px 30px 30px 30px;
     background-color: white;
     padding: 10px 10px 10px 10px;
-    border: 2px solid #A8C6FA;
     font-weight: bold;
-    color: #A8C6FA;
+    color: #1e88e5;
     font-family: 'Poiret One', cursive;
 }
 
 h3 {
     font-family: 'Amatic SC', cursive;
-    color: #0C59CF;
+    color: #1e88e5;
     font-weight: bold;
     text-align: center;
     padding: 0 0 5px 0;
@@ -123,7 +117,7 @@ h3 {
 }
 h4 {
     font-family: 'Amatic SC', cursive;
-    color: #A8C6FA;
+    color: #1e88e5;
     background-color: #FFFFFF;
     font-size: 35px;
     font-weight: bold;
@@ -136,7 +130,7 @@ h4 {
 
 h5{
    font-family: 'Poiret One', cursive;
-   color: #0C59CF;
+   color: #1e88e5;
    font-size: 25px;
    font-weight: bold;
 }
@@ -177,12 +171,12 @@ p {
 
 .carouselleft {
     margin: 112px 30px 30px 30px;
-    border: 5px solid #6291CF;
+    border: 5px solid #2196f3;
 }
 
 .carouselright {
     margin: 112px 30px 30px -30px;
-    border: 5px solid #6291CF;
+    border: 5px solid #2196f3;
 }
 
 /*Footer*/
@@ -193,7 +187,7 @@ footer {
     font-family: 'Poiret One', cursive;
     margin: 0;
     padding: 1px 1px 1px 1px;
-    background-color: #6291CF;
+    background-color: #2196f3;
     color: white;
 }
 
@@ -205,6 +199,19 @@ footer {
 #logowcs{
     height: 20px;
     width: 20px;
+}
+
+.MLCGU p{
+    color: grey;
+    font-size: 20px;
+    text-align: left;
+}
+
+.MLCGU h6{
+    color: #1e88e5;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
 }
 
 /*Partie admnistrable*/

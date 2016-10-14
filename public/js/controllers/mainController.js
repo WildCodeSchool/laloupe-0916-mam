@@ -12,7 +12,7 @@ class mainController {
     carouselparallax() {
             $('.parallax').parallax();
 
-        });
+
         autoplay();
 
         function autoplay() {
@@ -24,6 +24,7 @@ class mainController {
         $('.modal2').leanModal();
         $('.modal3').leanModal();
         $('.modal4').leanModal();
+        $('.modal5').leanModal();
     }
 
                 /*
