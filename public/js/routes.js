@@ -16,9 +16,9 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'adminController',
             controllerAs: 'vm'
         })
-        .when('/addActivity', {
-            templateUrl: 'views/admin/addActivity.html',
-            controller: 'addActivity',
+        .when('/editActivity', {
+            templateUrl: 'views/admin/editActivity.html',
+            controller: 'editActivity',
             controllerAs: 'vm'
         })
         .otherwise({

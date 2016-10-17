@@ -1,3 +1,3 @@
-class addActivity {
+class editActivity {
     constructor() {}
 }
