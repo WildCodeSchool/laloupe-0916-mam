@@ -9,6 +9,9 @@
     min-height: 44vh;
 }
 
+body {
+  font-family: 'Poiret One', cursive;
+}
 
 /*Bannière présentation*/
 
@@ -83,12 +86,13 @@ h2 {
     padding: 10px 10px 10px 10px;
     text-align: center;
     color: #2196f3;
-    font-size:18px;
+    font-weight: bold;
 }
 
 .PresentationMAM {
     text-align: center;
     color: #2196f3;
+    font-weight: bold;
 }
 
 .imagemam {
@@ -114,8 +118,8 @@ h2 {
     margin: 30px 30px 30px 30px;
     background-color: white;
     padding: 10px 10px 10px 10px;
+    font-weight: bold;
     color: #1e88e5;
-    font-family: Tahoma;
     font-size: 16px;
 }
 
@@ -142,14 +146,12 @@ h4 {
 }
 
 h5{
-   font-family: Tahoma;
    color: #1e88e5;
    font-size: 25px;
    font-weight: bold;
 }
 
 p {
-    font-family: Tahoma;
     font-size: 18px;
 }
 
@@ -184,7 +186,7 @@ p {
 
 .presentationPartenaires {
     text-align: center;
-    color: #6291CF;
+    color: #1e88e5;
     font-weight: bold;
 }
 
@@ -233,16 +235,11 @@ footer {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    font-family: Tahoma;
     margin: 0;
     bottom:0;
     padding: 1px 1px 1px 1px;
     background-color: #2196f3;
     color: white;
-}
-
-.modal6 {
-  color:white;
 }
 
 #ML {
