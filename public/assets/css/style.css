@@ -241,6 +241,10 @@ footer {
     color: white;
 }
 
+.modal6 {
+  color:white;
+}
+
 #ML {
     color: white;
     ##6291CF text-decoration: none;
@@ -262,6 +266,12 @@ footer {
     font-weight: bold;
     font-size: 30px;
     text-align: left;
+}
+
+.lesPGM p {
+  color: grey;
+  font-size: 20px;
+  text-align: left;
 }
 
 /*Partie admnistrable*/

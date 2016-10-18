@@ -25,6 +25,7 @@ class mainController {
         $('.modal3').leanModal();
         $('.modal4').leanModal();
         $('.modal5').leanModal();
+        $('.modal6').leanModal();
     }
 
                 /*
