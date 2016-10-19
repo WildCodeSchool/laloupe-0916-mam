@@ -65,6 +65,6 @@ export default class Todo {
             } else {
                 res.sendStatus(200);
             }
-        })
+        });
     }
 }

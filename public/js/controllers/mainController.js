@@ -1,16 +1,21 @@
 class mainController {
 
     constructor() {
-        /*this.todoService = todoService;
-        this.load();*/
-
+        // ezfb.getLoginStatus(function(res) {
+        //     $scope.loginStatus = res;
+        //
+        //     (more || angular.noop)();
+        // });
+        // ezfb.api('/me', function(res) {
+        //     $scope.apiMe = res;
+        // });
 
     }
 
 
 
     carouselparallax() {
-            $('.parallax').parallax();
+        $('.parallax').parallax();
 
 
         autoplay();
@@ -27,7 +32,7 @@ class mainController {
         $('.modal5').leanModal();
     }
 
-                /*
+    /*
 
     load() {
         this.todoService.getAll().then((res) => {
@@ -54,4 +59,4 @@ class mainController {
         })
     }
 */
-            }
+}

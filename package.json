@@ -7,7 +7,7 @@
     "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jean-Baptiste Pasquier",
+  "author": "Johan Hélias, Sylvain Labarre, Gaëlle Morin",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^0.8.7",
