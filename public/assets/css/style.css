@@ -83,6 +83,14 @@ h2 {
 
 /*Intérieur des nuages*/
 
+hr {
+  height: 1px;
+  margin: 0px 600px 0px 600px;
+  color: #2196f3;
+  background-color: #2196f3;
+  border: 0;
+}
+
 #Presentation {
     padding: 10px 40px 10px 40px;
     text-align: center;
@@ -158,11 +166,6 @@ p {
     font-size: 18px;
 }
 
-.material-icons {
-    position: relative;
-    margin-bottom: 20px;
-}
-
 .material-icons.orangeColor {
     color: #FF340D;
 }
@@ -182,10 +185,10 @@ p {
 }
 
 .description {
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
     text-align: justify;
-    padding: 4px;
+    padding: 40px;
 }
 
 .presentationPartenaires {
