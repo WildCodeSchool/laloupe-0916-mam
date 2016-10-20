@@ -10,8 +10,9 @@
 }
 
 body {
-  font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One', cursive;
 }
+
 
 /*Bannière présentation*/
 
@@ -21,7 +22,7 @@ body {
     text-align: center;
 }
 
-.petitlogo {
+#petitlogo {
     width: 160px;
     height: 120px;
     position: absolute;
@@ -103,17 +104,18 @@ h2 {
     border: 2px #A8C6FA solid;
 }
 
-.imagemodal{
-    width:300px;
+.imagemodal {
+    width: 300px;
     height: 225px;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px #A8C6FA solid;
 }
 
-.textmodal{
+.textmodal {
     margin: 30px 30px 0px 30px;
 }
+
 .cadre {
     margin: 30px 30px 30px 30px;
     background-color: white;
@@ -145,10 +147,10 @@ h4 {
     padding: 0 5px 0 5px;
 }
 
-h5{
-   color: #1e88e5;
-   font-size: 25px;
-   font-weight: bold;
+h5 {
+    color: #1e88e5;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 p {
@@ -156,8 +158,8 @@ p {
 }
 
 .material-icons {
-  position: relative;
-  margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .material-icons.orangeColor {
@@ -181,7 +183,7 @@ p {
 .description {
     margin-top: 30px;
     margin-bottom: 40px;
-    text-align:center;
+    text-align: center;
 }
 
 .presentationPartenaires {
@@ -236,7 +238,7 @@ footer {
     font-weight: bold;
     text-align: center;
     margin: 0;
-    bottom:0;
+    bottom: 0;
     padding: 1px 1px 1px 1px;
     background-color: #2196f3;
     color: white;
@@ -252,24 +254,44 @@ footer {
     width: 20px;
 }
 
-.MLCGU p{
+.MLCGU p {
     color: grey;
     font-size: 20px;
     text-align: left;
 }
 
-.MLCGU h6{
+.MLCGU h6 {
     color: #1e88e5;
     font-weight: bold;
     font-size: 30px;
     text-align: left;
 }
 
-.lesPGM p {
-  color: grey;
-  font-size: 20px;
-  text-align: left;
+.modal6 {
+    color: white;
 }
+
+.lesPGM p {
+    color: grey;
+    font-size: 24px;
+    text-align: left;
+}
+
+.logoModal6 {
+    height: 20px;
+    width: 20px;
+}
+
+.lesPGM h6 {
+    font-size: 22px;
+    color: #1e88e5;
+}
+
+#logoWcsModal {
+    height: 115px;
+    width: 115px;
+}
+
 
 /*Partie admnistrable*/
 
@@ -297,13 +319,13 @@ footer {
 }
 
 .btn-large.orangeColor {
-  background-color: #FF340D;
+    background-color: #FF340D;
 }
 
 .btn-large.purpleColor {
-  background-color: #950094;
+    background-color: #950094;
 }
 
 .btn-large.blueColor {
-  background-color: #2196F3;
+    background-color: #2196F3;
 }
