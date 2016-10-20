@@ -225,6 +225,9 @@ p {
 .carouselright {
     margin: 112px 30px 30px -30px;
     border: 5px solid #2196f3;
+    width: 700px;
+    margin-top: -50px;
+    margin-bottom: 10px;
 }
 
 

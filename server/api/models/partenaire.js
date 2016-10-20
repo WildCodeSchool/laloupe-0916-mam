@@ -1,44 +1,46 @@
 import mongoose from 'mongoose';
 
-const todoSchema = new mongoose.Schema({
+const partenaireSchema = new mongoose.Schema({
+    titre: String,
     p: String,
-    link: String,
+    link: String
 });
 
-let model = mongoose.model('Todo', todoSchema);
+let model = mongoose.model('Partenaire', partenaireSchema);
 
-export default class Todo {
+export default class Partenaire {
 
     findAll(req, res) {
-        model.find({}, (err, todos) => {
+        model.find({}, (err, partenaires) => {
             if (err) {
                 res.sendStatus(403);
             } else {
-                res.json(todos);
+                res.json(partenaires);
             }
         });
     }
 
     findById(req, res) {
-        model.findById(req.params.id, (err, todo) => {
-            if (err || !todo) {
+        model.findById(req.params.id, (err, partenaire) => {
+            if (err || !partenaire) {
                 res.sendStatus(403);
             } else {
-                res.json(todo);
+                res.json(partenaire);
             }
         });
     }
 
     create(req, res) {
         model.create({
+                titre: req.body.titre,
                 p: req.body.p,
                 link: req.body.link
             },
-            (err, todo) => {
+            (err, partenaire) => {
                 if (err) {
                     res.status(500).send(err.message);
                 } else {
-                    res.json(todo);
+                    res.json(partenaire);
                 }
             });
     }
@@ -47,13 +49,14 @@ export default class Todo {
         model.update({
             _id: req.params.id
         }, {
+            titre: req.body.titre,
             p: req.body.p,
             link: req.body.link
-        }, (err, todo) => {
-            if (err || !todo) {
+        }, (err, partenaire) => {
+            if (err || !partenaire) {
                 res.status(500).send(err.message);
             } else {
-                res.json(todo);
+                res.json(partenaire);
             }
         });
     }

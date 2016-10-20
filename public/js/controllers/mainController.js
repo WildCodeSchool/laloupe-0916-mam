@@ -7,19 +7,8 @@ class mainController {
 
     }
 
-
-
     carouselparallax() {
-            $('.parallax').parallax();
-
-
-        autoplay();
-
-        function autoplay() {
-            $('.carousel').carousel('next');
-            setTimeout(autoplay, 4500);
-        }
-
+        $('.parallax').parallax();
         $('.modal1').leanModal();
         $('.modal2').leanModal();
         $('.modal3').leanModal();
@@ -27,7 +16,19 @@ class mainController {
         $('.modal5').leanModal();
     }
 
-                /*
+    carousel() {
+        $('.carousel.carousel-slider').carousel({
+            full_width: true
+        });
+        autoplay();
+
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 4500);
+        }
+    }
+
+    /*
 
     load() {
         this.todoService.getAll().then((res) => {
@@ -54,4 +55,4 @@ class mainController {
         })
     }
 */
-            }
+}

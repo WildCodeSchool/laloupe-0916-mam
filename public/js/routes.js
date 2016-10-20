@@ -21,6 +21,21 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'addActivity',
             controllerAs: 'vm'
         })
+        .when('/editActivite', {
+            templateUrl: 'views/admin/editActivite.html',
+            controller: 'editActivite',
+            controllerAs: 'vm'
+        })
+        .when('/editInfoPratique', {
+            templateUrl: 'views/admin/editInfoPratique.html',
+            controller: 'editInfoPratique',
+            controllerAs: 'vm'
+        })
+        .when('/editPartenaire', {
+            templateUrl: 'views/admin/editPartenaire.html',
+            controller: 'editPartenaire',
+            controllerAs: 'vm'
+        })
         .otherwise({
             redirectTo: '/'
         })
