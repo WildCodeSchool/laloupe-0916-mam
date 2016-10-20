@@ -1,11 +1,18 @@
 class mainController {
 
     constructor() {
+        // /*this.todoService = todoService;
+        // this.load();*/
+        //
         // ezfb.getLoginStatus(function(res) {
         //     $scope.loginStatus = res;
         //
         //     (more || angular.noop)();
         // });
+        //
+        // /**
+        //  * Origin: FB.api
+        //  */
         // ezfb.api('/me', function(res) {
         //     $scope.apiMe = res;
         // });
