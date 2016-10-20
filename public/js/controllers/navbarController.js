@@ -30,5 +30,4 @@ class navbarController {
         this.isLogged = false;
         this.$location.path('/login');
     }
-
 }

@@ -1,6 +1,6 @@
 class mainController {
 
-    constructor() {
+    constructor(activiteService, infoService, $sce) {
         // /*this.todoService = todoService;
         // this.load();*/
         //
@@ -17,6 +17,10 @@ class mainController {
         //     $scope.apiMe = res;
         // });
 
+        this.activiteService = activiteService;
+        this.infoService = infoService;
+        this.$sce = $sce;
+        this.load();
     }
 
 
@@ -42,6 +46,21 @@ carousel() {
     }
 }
 
+load() {
+        this.activiteService.getAll().then((res) => {
+            this.activites = res.data;
+            this.activites.forEach((e, i) => {
+                this.activites[i].descriptionActivite = this.$sce.trustAsHtml(e.descriptionActivite.replace(new RegExp('\r?\n', 'g'), '<br />'));
+            })
+        });
+        this.infoService.getAll().then((res) => {
+            this.infos = res.data;
+            this.infos.forEach((e, i) => {
+                this.infos[i].descriptionInfo = this.$sce.trustAsHtml(e.descriptionInfo.replace(new RegExp('\r?\n', 'g'), '<br />'));
+            })
+        });
+    }
+    
     /*
 
     load() {

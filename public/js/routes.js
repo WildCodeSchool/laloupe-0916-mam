@@ -21,6 +21,11 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'editActivity',
             controllerAs: 'vm'
         })
+        .when('/editInfo', {
+            templateUrl: 'views/admin/editInfo.html',
+            controller: 'editInfo',
+            controllerAs: 'vm'
+        })
         .otherwise({
             redirectTo: '/'
         })
