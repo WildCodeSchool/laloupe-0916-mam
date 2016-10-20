@@ -7,7 +7,20 @@
 
     <div class="contenuAdmin">
         <h3>Modifier une activité</h3>
+        <div class="cadre">
+            <div class="row">
+                <form ng-repeat='activite in vm.activites'>
 
+                    <div class="col s4">
+                        <i class="medium material-icons" ng-class="$index%2==0 ? 'orangeColor' : 'purpleColor'">{{activite.logoActivite}}</i>
+                        <input placeholder="Titre" type="text" ng-model='activite.titreActivite'>
+                        <textarea placeholder="description" class="materialize-textarea" ng-model='activite.descriptionActivite'></textarea>
+                        <button ng-click='vm.update(activite)' class="btn waves-effect waves-light blue">modifier</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
     <div class="nuagebasadmin">
         <img src="assets/img/nuageblancinverse.png">
