@@ -11,7 +11,7 @@
             <div class="row">
                 <form ng-repeat='activite in vm.activites'>
 
-                    <div class="col s4">
+                    <div class="col s4 alignementColonne">
                         <i class="medium material-icons" ng-class="$index%2==0 ? 'orangeColor' : 'purpleColor'">{{activite.logoActivite}}</i>
                         <input placeholder="Titre" type="text" ng-model='activite.titreActivite'>
                         <textarea placeholder="description" class="materialize-textarea" ng-model='activite.descriptionActivite'></textarea>

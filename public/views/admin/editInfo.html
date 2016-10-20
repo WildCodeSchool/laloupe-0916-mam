@@ -10,7 +10,7 @@
         <div class="cadre">
             <div class="row">
                 <form ng-repeat='info in vm.infos'>
-                    <div class="col s4">
+                    <div class="col s4 alignementColonne">
                         <i class="medium material-icons" ng-class="$index%2==0 ? 'orangeColor' : 'purpleColor'">{{info.logoInfo}}</i>
                         <textarea placeholder="description" class="materialize-textarea" ng-model='info.descriptionInfo'></textarea>
                         <button ng-click='vm.update(info)' onclick="Materialize.toast('L\'info a bien été modifiée', 4000)" class="btn waves-effect waves-light blue">modifier</button>
