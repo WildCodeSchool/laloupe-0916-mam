@@ -20,12 +20,11 @@
     </head>
     <body>
 
-      <ng-include src="'views/navbar.html'"></ng-include>
+        <ng-include src="'views/navbar.html'"></ng-include>
 
-      <ng-view></ng-view>
+        <ng-view></ng-view>
 
-      <ng-include src="'views/footer.html'"></ng-include>
-
+        <ng-include src="'views/footer.html'"></ng-include>
 
         <script src="vendor/jquery/dist/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
@@ -35,10 +34,13 @@
 
         <script src="js/factories/sessionFactory.js"></script>
 
+        <script src="js/services/activiteService.js"></script>
+        <script src="js/services/infoService.js"></script>
         <script src="js/services/userService.js"></script>
         <script src="js/services/todoService.js"></script>
         <script src="js/controllers/mainController.js"></script>
         <script src="js/controllers/editActivity.js"></script>
+        <script src="js/controllers/editInfo.js"></script>
         <script src="js/controllers/adminController.js"></script>
         <script src="js/controllers/navbarController.js"></script>
         <script src="js/controllers/loginController.js"></script>
