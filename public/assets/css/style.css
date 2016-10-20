@@ -312,14 +312,19 @@ footer {
     text-align: center;
 }
 
-.nuagehautadmin {
+.nuagehautadmin img {
     margin-bottom: -30px;
-    width: 100%;
+    width:100%;
+
 }
 
-.nuagebasadmin {
+.nuagebasadmin img {
     margin-top: -23px;
-    width: 100%;
+    width:100%;
+}
+
+textarea {
+  height:80px!important;
 }
 
 .admninistration {
