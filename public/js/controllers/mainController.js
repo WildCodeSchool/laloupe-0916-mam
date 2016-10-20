@@ -16,28 +16,41 @@ class mainController {
 
     carouselparallax() {
         $('.parallax').parallax();
-
-
-        autoplay();
-
-        function autoplay() {
-            $('.carousel').carousel('next');
-            setTimeout(autoplay, 4500);
-        }
-
         $('.modal1').leanModal();
         $('.modal2').leanModal();
         $('.modal3').leanModal();
         $('.modal4').leanModal();
         $('.modal5').leanModal();
+        $('.modal6').leanModal();
     }
+carousel() {
+    $('.carousel.carousel-slider').carousel({
+        full_width: true
+    });
+    autoplay();
+
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+    }
+}
 
     /*
 
     load() {
         this.todoService.getAll().then((res) => {
             this.todos = res.data;
-        })
+        })carousel() {
+    $('.carousel.carousel-slider').carousel({
+        full_width: true
+    });
+    autoplay();
+
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+    }
+}
     }
 
     create() {
