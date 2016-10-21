@@ -229,7 +229,7 @@ p {
     align-content: center;
     border: 5px solid #2196f3;
     width: 700px;
-    margin: 0 auto;
+    margin: 0 auto;Ouvert toute l'année.
 }
 
 /*Footer*/
@@ -277,7 +277,7 @@ footer {
     margin: 4px;
 }
 
-.lesPGM p {
+.lesPGM p {Ouvert toute l'annéeOuvert toute l'année.
     color: grey;
     font-size: 24px;
     text-align: left;
@@ -329,6 +329,7 @@ textarea {
 
 .admninistration {
     background-color: #B4D4FF;
+    min-height: calc(100vh - 324px  - 66px);
 }
 
 .contenuAdmin {
