@@ -66,7 +66,7 @@ h2 {
 .fixed-top {
     top: 0;
     position: fixed;
-    z-index: 4;
+    z-index: 100000000;
 }
 
 .nav-wrapper {
@@ -80,15 +80,19 @@ h2 {
     font-weight: bold;
 }
 
+.side-nav {
+    background-color: #6291CF;
+}
+
 
 /*Intérieur des nuages*/
 
 hr {
-  height: 1px;
-  margin: 0px 600px 0px 600px;
-  color: #2196f3;
-  background-color: #2196f3;
-  border: 0;
+    height: 1px;
+    margin: 0px 600px 0px 600px;
+    color: #2196f3;
+    background-color: #2196f3;
+    border: 0;
 }
 
 #Presentation {
@@ -229,8 +233,11 @@ p {
     align-content: center;
     border: 5px solid #2196f3;
     width: 700px;
-    margin: 0 auto;Ouvert toute l'année.
+    margin: 0 auto;
+    Ouvert toute l'année.
+
 }
+
 
 /*Footer*/
 
@@ -277,8 +284,8 @@ footer {
     margin: 4px;
 }
 
-.lesPGM p {Ouvert toute l'annéeOuvert toute l'année.
-    color: grey;
+.lesPGM p {
+    Ouvert toute l'annéeOuvert toute l'année. color: grey;
     font-size: 24px;
     text-align: left;
 }
@@ -314,22 +321,21 @@ footer {
 
 .nuagehautadmin img {
     margin-bottom: -30px;
-    width:100%;
-
+    width: 100%;
 }
 
 .nuagebasadmin img {
     margin-top: -23px;
-    width:100%;
+    width: 100%;
 }
 
 textarea {
-  height:80px!important;
+    height: 80px!important;
 }
 
 .admninistration {
     background-color: #B4D4FF;
-    min-height: calc(100vh - 324px  - 66px);
+    min-height: calc(100vh - 324px - 66px);
 }
 
 .contenuAdmin {

@@ -1,7 +1,7 @@
 <header ng-controller='navbarController'>
     <div class="row">
         <div id="titre" class="col s12">
-            <div class="col s2">
+            <div class="col s2 hide-on-small-only">
                 <img src="assets/img/logo.jpg" id="petitlogo" alt=""/>
             </div>
             <div id="entete" class="col s8 offset-2">
@@ -23,7 +23,33 @@
 
     <nav class="navbar" navbar-fix>
         <div class="nav-wrapper blue">
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                    <a class="js-scrollTo" href="#titre">Accueil</a>
+                </li>
+                <li>
+                    <a class="js-scrollTo" href="#nuage1">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                    <a class="js-scrollTo" href="#nuage2">Actualités</a>
+                </li>
+                <li>
+                    <a class="js-scrollTo" href="#nuage3">Locaux</a>
+                </li>
+                <li>
+                    <a class="js-scrollTo" href="#nuage4">Infos pratiques</a>
+                </li>
+                <li>
+                    <a class="js-scrollTo" href="#nuage5">Activités</a>
+                </li>
+                <li>
+                    <a class="js-scrollTo" href="#nuage6">Partenaires</a>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
                 <li>
                     <a class="js-scrollTo" href="/#titre">Accueil</a>
                 </li>
