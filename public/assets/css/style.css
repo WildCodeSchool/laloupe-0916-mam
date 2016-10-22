@@ -199,6 +199,7 @@ p {
     text-align: center;
     color: #1e88e5;
     font-weight: bold;
+    min-height:361px!important;
 }
 
 .imagePartenaires {
