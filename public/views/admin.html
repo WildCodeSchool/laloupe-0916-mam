@@ -7,24 +7,27 @@
 
     <div class="contenuAdmin">
         <h3>Page d'administration</h3>
-        <br>
-        <div class="boutonAdmin">
-            <a id="boutonActivites" class="waves-effect waves-light btn-large orangeColor">Activités</a>
-            <a id="boutonInfos" class="waves-effect waves-light btn-large purpleColor">Infos pratiques</a>
-            <a id="boutonPart" class="waves-effect waves-light btn-large orangeColor">Partenaires</a>
-        </div>
-        <br>
-        <div id="modifActivites" style="display: none">
-            <a class="waves-effect waves-light btn-large blueColor" href="/#/editActivity"><i ng-click='vm.editActivity()' class="material-icons right">mode_edit</i>Modifier une activité</a>
-        </div>
-        <div id="modifInfosPratiques" style="display: none">
-            <a class="waves-effect waves-light btn-large blueColor" href="/#/editInfo"><i ng-click='vm.editInfo()' class="material-icons right">mode_edit</i>Modifier une info</a>
-        </div>
-        <div id="modifPartenaires" style="display: none">
-            <a class="waves-effect waves-light btn-large blueColor">
-                <i class="material-icons right">playlist_add</i>Ajouter un partenaire</a>
-            <a class="waves-effect waves-light btn-large blueColor">
-                <i class="material-icons right">delete</i>Supprimer un partenaire</a>
+        <div class="cadre">
+            <div class="boutonAdmin">
+                <a id="boutonActivites" class="waves-effect waves-light btn-large orangeColor">Activités</a>
+                <a id="boutonInfos" class="waves-effect waves-light btn-large purpleColor">Infos pratiques</a>
+                <a id="boutonPart" class="waves-effect waves-light btn-large orangeColor">Partenaires</a>
+            </div>
+            <br>
+            <div id="modifActivites" style="display: none">
+                <a class="waves-effect waves-light btn-large blueColor" href="/#/editActivity">
+                    <i ng-click='vm.editActivity()' class="material-icons right">mode_edit</i>Modifier une activité</a>
+            </div>
+            <div id="modifInfosPratiques" style="display: none">
+                <a class="waves-effect waves-light btn-large blueColor" href="/#/editInfo">
+                    <i ng-click='vm.editInfo()' class="material-icons right">mode_edit</i>Modifier une info</a>
+            </div>
+            <div id="modifPartenaires" style="display: none">
+                <a class="waves-effect waves-light btn-large blueColor">
+                    <i class="material-icons right">playlist_add</i>Ajouter un partenaire</a>
+                <a class="waves-effect waves-light btn-large blueColor">
+                    <i class="material-icons right">delete</i>Supprimer un partenaire</a>
+            </div>
         </div>
     </div>
     <div class="nuagebasadmin">
