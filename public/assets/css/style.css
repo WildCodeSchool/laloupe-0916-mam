@@ -199,7 +199,7 @@ p {
     text-align: center;
     color: #1e88e5;
     font-weight: bold;
-    min-height:361px!important;
+    min-height: 370px!important;
 }
 
 .imagePartenaires {
@@ -209,7 +209,6 @@ p {
     margin-bottom: 40px;
     border: 2px #A8C6FA solid;
 }
-
 
 /*Positionnement des nuages*/
 
@@ -235,8 +234,6 @@ p {
     border: 5px solid #2196f3;
     width: 700px;
     margin: 0 auto;
-    Ouvert toute l'année.
-
 }
 
 
@@ -286,7 +283,7 @@ footer {
 }
 
 .lesPGM p {
-    Ouvert toute l'annéeOuvert toute l'année. color: grey;
+    color: grey;
     font-size: 24px;
     text-align: left;
 }
@@ -316,8 +313,36 @@ footer {
 
 /*Partie admnistrable*/
 
+.admninistration {
+    background-color: #B4D4FF;
+    min-height: calc(100vh - 324px - 68px);
+}
+
+.admninistration h3 {
+    font-size: 50px;
+}
+
+.contenuAdmin {
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
 .boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
     text-align: center;
+}
+
+.boutonAdmin a {
+    width: 165px;
+    height: 50px;
+    font-size: 20px;
+    align-content: center;
+}
+
+#modifActivites a, #modifInfosPratiques a, #modifPartenaires a {
+    font-size: 18px;
+    height: 45px;
+    align-content: center;
 }
 
 .nuagehautadmin img {
@@ -332,16 +357,6 @@ footer {
 
 textarea {
     height: 80px!important;
-}
-
-.admninistration {
-    background-color: #B4D4FF;
-    min-height: calc(100vh - 324px - 66px);
-}
-
-.contenuAdmin {
-    background-color: white;
-    padding-bottom: 30px;
 }
 
 .btn-large.orangeColor {
