@@ -80,10 +80,49 @@ h2 {
     font-weight: bold;
 }
 
+/*Barre de navigation mobile*/
+
 .side-nav {
-    background-color: #6291CF;
+    background-color: #FFFFFF;
 }
 
+#cloud {
+	width: 220px; height: 60px;
+
+	background: #6291CF;
+
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+
+	position: relative;
+	margin: 120px auto 20px;
+}
+
+#cloud:after, #cloud:before {
+	content: '';
+	position: absolute;
+	background: #6291CF;
+	z-index: -1
+}
+
+#cloud:after {
+	width: 120px; height: 120px;
+	top: -70px; left: 80px;
+
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+#cloud:before {
+	width: 75px; height: 75px;
+	top: -40px; right: 125px;
+
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
 
 /*Intérieur des nuages*/
 
