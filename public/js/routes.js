@@ -26,6 +26,16 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'editInfo',
             controllerAs: 'vm'
         })
+        .when('/createPartenaire', {
+            templateUrl: 'views/admin/createPartenaire.html',
+            controller: 'createPartenaire',
+            controllerAs: 'vm'
+        })
+        .when('/deletePartenaire', {
+            templateUrl: 'views/admin/deletePartenaire.html',
+            controller: 'deletePartenaire',
+            controllerAs: 'vm'
+        })
         .otherwise({
             redirectTo: '/'
         })

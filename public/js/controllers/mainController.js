@@ -1,6 +1,6 @@
 class mainController {
 
-    constructor(activiteService, infoService, $sce) {
+    constructor(activiteService, infoService) {
         // /*this.todoService = todoService;
         // this.load();*/
         //
@@ -19,7 +19,6 @@ class mainController {
 
         this.activiteService = activiteService;
         this.infoService = infoService;
-        this.$sce = $sce;
         this.load();
     }
 
@@ -50,13 +49,13 @@ load() {
         this.activiteService.getAll().then((res) => {
             this.activites = res.data;
             this.activites.forEach((e, i) => {
-                this.activites[i].descriptionActivite = this.$sce.trustAsHtml(e.descriptionActivite.replace(new RegExp('\r?\n', 'g'), '<br />'));
+                this.activites[i].descriptionActivite = e.descriptionActivite.replace(new RegExp('\r?\n', 'g'), '<br />');
             })
         });
         this.infoService.getAll().then((res) => {
             this.infos = res.data;
             this.infos.forEach((e, i) => {
-                this.infos[i].descriptionInfo = this.$sce.trustAsHtml(e.descriptionInfo.replace(new RegExp('\r?\n', 'g'), '<br />'));
+                this.infos[i].descriptionInfo = e.descriptionInfo.replace(new RegExp('\r?\n', 'g'), '<br />');
             })
         });
     }
@@ -66,17 +65,7 @@ load() {
     load() {
         this.todoService.getAll().then((res) => {
             this.todos = res.data;
-        })carousel() {
-    $('.carousel.carousel-slider').carousel({
-        full_width: true
-    });
-    autoplay();
-
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 4500);
-    }
-}
+        })
     }
 
     create() {
