@@ -23,10 +23,10 @@
                     <i ng-click='vm.editInfo()' class="material-icons right">mode_edit</i>Modifier une info</a>
             </div>
             <div id="modifPartenaires" style="display: none">
-                <a class="waves-effect waves-light btn-large blueColor">
-                    <i class="material-icons right">playlist_add</i>Ajouter un partenaire</a>
-                <a class="waves-effect waves-light btn-large blueColor">
-                    <i class="material-icons right">delete</i>Supprimer un partenaire</a>
+                <a class="waves-effect waves-light btn-large blueColor" href="/#/createPartenaire">
+                    <i ng-click='vm.createPartenaire()' class="material-icons right">playlist_add</i>Ajouter un partenaire</a>
+                <a class="waves-effect waves-light btn-large blueColor"  href="/#/deletePartenaire">
+                    <i ng-click='vm.deletePartenaire()' class="material-icons right">delete</i>Supprimer un partenaire</a>
             </div>
         </div>
     </div>

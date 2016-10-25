@@ -354,7 +354,7 @@ footer {
 
 .admninistration {
     background-color: #B4D4FF;
-    min-height: calc(100vh - 324px - 68px);
+    min-height: 100vh;
 }
 
 .admninistration h3 {
@@ -365,6 +365,14 @@ footer {
     background-color: white;
     padding-top: 25px;
     padding-bottom: 30px;
+}
+
+.retourAdmin {
+  vertical-align: middle!important;
+  font-size:22px;
+  text-align: center;
+  color: #1e88e5;
+  font-weight: bold;
 }
 
 .boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
@@ -385,12 +393,12 @@ footer {
 }
 
 .nuagehautadmin img {
-    margin-bottom: -30px;
+    margin-bottom: -19px;
     width: 100%;
 }
 
 .nuagebasadmin img {
-    margin-top: -23px;
+    margin-top: -14px;
     width: 100%;
 }
 
