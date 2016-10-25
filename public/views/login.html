@@ -1,35 +1,46 @@
-<div class="row">
-    <div class="col-4">
-        <div class='text-center'>
-            <h3>Sign in to your account</h3>
-        </div>
-        <form class="form-horizontal" name="formConnect">
-            <div class="form-group">
-                <label for="email" class="col-s2 control-label">Email</label>
-                <div class="col-s-10">
-                    <input type="email" class="form-control" id="email" placeholder="Email" ng-model='vm.email' ng-required='true'>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="password" class="col-s2 control-label">Password</label>
-                <div class="col-s10">
-                    <input type="password" class="form-control" id="password" placeholder="Password" ng-model='vm.password' ng-required='true'>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col offset-2 col-s10">
-                    <button ng-click='vm.login()' ng-disabled="formConnect.$invalid" class="btn btn-primary pull-right">Sign in</button>
-                    <button ng-click='vm.createAccount()' ng-disabled="formConnect.$invalid" class="btn btn-link pull-right">Sign up</button>
-                </div>
-            </form>
-            <div ng-show="(vm.loginMessage)" class="alert" ng-class="{'alert-danger': vm.loginMessage.type == 'error', 'alert-success': vm.loginMessage.type == 'success', 'alert-info': vm.loginMessage.type == 'info'}">
-                <h4>
-                    <span class="glyphicon glyphicon-exclamation-sign pull-left"></span>&nbsp;{{vm.loginMessage.title}}</h4>
-                <p>{{vm.loginMessage.message}}</p>
+<div class="login">
+    <br><br>
+
+    <div class="nuagehautlogin">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+
+    <div class="contenuLogin">
+        <div class="row">
+            <div class="col s12 ">
+                <h3>Connectez-vous</h3>
+                <form>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate" ng-model='vm.email' ng-required='true'>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate" ng-model='vm.password' ng-required='true'>
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s8 offset-s4">
+                            <button ng-click='vm.login()' ng-disabled="formConnect.$invalid" class="btn-large waves-effect waves-light orangeColor" type="submit" name="action">Se connecter
+                                <i class="material-icons right">send</i>
+                            </button>
+                            <button ng-click='vm.createAccount()' ng-disabled="formConnect.$invalid" class="btn-large waves-effect waves-light purpleColor" type="submit" name="action">Créer un compte
+                                <i class="material-icons right">mode_edit</i>
+                            </button>
+                            <div ng-show="(vm.loginMessage)">
+                                <h4>{{vm.loginMessage.title}}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <div class="nuagebasadmin">
+
+    <div class="nuagebaslogin">
         <img src="assets/img/nuageblancinverse.png">
     </div>
     <br>

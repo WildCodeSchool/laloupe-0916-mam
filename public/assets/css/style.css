@@ -352,7 +352,7 @@ footer {
 
 /*Partie admnistrable*/
 
-.admninistration {
+.admninistration, .login{
     background-color: #B4D4FF;
     min-height: calc(100vh - 324px - 68px);
 }
@@ -361,7 +361,7 @@ footer {
     font-size: 50px;
 }
 
-.contenuAdmin {
+.contenuAdmin, .contenuLogin {
     background-color: white;
     padding-top: 25px;
     padding-bottom: 30px;
@@ -384,13 +384,22 @@ footer {
     align-content: center;
 }
 
-.nuagehautadmin img {
+.nuagehautadmin img, {
     margin-bottom: -30px;
     width: 100%;
 }
 
 .nuagebasadmin img {
     margin-top: -23px;
+    width: 100%;
+}
+
+.nuagehautlogin img {
+    margin-bottom: -6px;
+    width: 100%
+}
+
+.nuagebaslogin img {
     width: 100%;
 }
 
