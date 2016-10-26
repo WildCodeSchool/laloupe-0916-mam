@@ -11,19 +11,19 @@
                 <h3>Connectez-vous</h3>
                 <form>
                     <div class="row">
-                        <div class="input-field col s12">
+                        <div class="input-field col s8 offset-s2">
                             <input id="email" type="email" class="validate" ng-model='vm.email' ng-required='true'>
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s12">
+                        <div class="input-field col s8 offset-s2">
                             <input id="password" type="password" class="validate" ng-model='vm.password' ng-required='true'>
                             <label for="password">Password</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s8 offset-s4">
+                        <div class="center boutonAdmin">
                             <button ng-click='vm.login()' ng-disabled="formConnect.$invalid" class="btn-large waves-effect waves-light orangeColor" type="submit" name="action">Se connecter
                                 <i class="material-icons right">send</i>
                             </button>
