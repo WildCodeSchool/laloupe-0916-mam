@@ -1,43 +1,11 @@
 class mainController {
 
     constructor(activiteService, infoService, partenaireService) {
-        // /*this.todoService = todoService;
-        // this.load();*/
-        //
-        // ezfb.getLoginStatus(function(res) {
-        //     $scope.loginStatus = res;
-        //
-        //     (more || angular.noop)();
-        // });
-        //
-        // /**
-        //  * Origin: FB.api
-        //  */
-        // ezfb.api('/me', function(res) {
-        //     $scope.apiMe = res;
-        // });
-        var TIMEOUT = null;
-        $(window).on('resize', function() {
-            if (TIMEOUT === null) {
-                TIMEOUT = window.setTimeout(function() {
-                    TIMEOUT = null;
-                    //fb_iframe_widget class is added after first FB.FXBML.parse()
-                    //fb_iframe_widget_fluid is added in same situation, but only for mobile devices (tablets, phones)
-                    //By removing those classes FB.XFBML.parse() will reset the plugin widths.
-                    $('.fb-page').removeClass('fb_iframe_widget fb_iframe_widget_fluid');
-                    $('.fb-page').removeClass('fb-xfbml-parse-ignore');
-                    FB.XFBML.parse();
-                }, 300);
-            }
-        });
-
         this.activiteService = activiteService;
         this.infoService = infoService;
         this.partenaireService = partenaireService;
         this.load();
     }
-
-
 
     carouselparallax() {
         $('.parallax').parallax();
@@ -48,6 +16,7 @@ class mainController {
         $('.modal5').leanModal();
         $('.modal6').leanModal();
     }
+
     carousel() {
         $('.carousel.carousel-slider').carousel({
             full_width: true
@@ -79,13 +48,6 @@ class mainController {
     }
 
     /*
-
-    load() {
-        this.todoService.getAll().then((res) => {
-            this.todos = res.data;
-        })
-    }
-
     create() {
         this.todoService.create(this.todo).then(() => {
             this.todo = '';

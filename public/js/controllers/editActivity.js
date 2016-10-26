@@ -1,7 +1,7 @@
 class editActivity {
     constructor(activiteService) {
-      this.activiteService = activiteService;
-      this.load();
+        this.activiteService = activiteService;
+        this.load();
     }
     load() {
         this.activiteService.getAll().then((res) => {

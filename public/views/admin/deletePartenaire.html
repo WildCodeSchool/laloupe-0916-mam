@@ -1,17 +1,20 @@
+<!--Espace administration : ajouter un partenaire-->
 <div class="admninistration">
     <br><br>
-
+    <!--Haut du nuage-->
     <div class="nuagehautadmin">
         <img src="assets/img/nuageblanc.png">
     </div>
-
+    <!--Titre + retour à la page admin-->
     <div class="contenuAdmin">
         <h3>Suppression d'un partenaire</h3>
         <div class="retourAdmin">
             <a href="/#/admin">
-                <i class="material-icons">input</i> Retour à la page admin
+                <i class="material-icons">input</i>
+                Retour à la page admin
             </a>
         </div>
+        <!--Suppression d'un partenaire-->
         <div class="cadre row">
             <div class="col s3 m3 l3 presentationPartenaires" ng-repeat='partenaire in vm.partenaires'>
                 <img src="{{partenaire.logoPartenaire}}" alt="partenaires" class="imagePartenaires">
@@ -22,6 +25,7 @@
 
         </div>
     </div>
+    <!--Bas du nuage-->
     <div class="nuagebasadmin">
         <img src="assets/img/nuageblancinverse.png">
     </div>

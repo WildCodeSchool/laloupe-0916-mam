@@ -1,15 +1,16 @@
 <!-- Nuage5 : Nos activités -->
 <div id="nuage5" class="row">
-    <!-- Nuage5 : Encadré avec le descriptif-->
+    <!-- Nuage5 : Présentation des activités proposées-->
     <div class="col s12">
         <h3>Nos activités</h3>
         <hr/>
+        <!--Les activités : jeux libres, activités dirigées et sorties en petits groupes-->
         <div class="cadre">
-          <div class="col s4 m4 l4 alignementColonne" ng-repeat='activite in vm.activites'>
-              <i class="medium material-icons" ng-class="$index%2==0 ? 'orangeColor' : 'purpleColor'">{{activite.logoActivite}}</i>
-              <h5>{{activite.titreActivite}}</h5>
-              <div class="description" ng-bind-html="activite.descriptionActivite"></div>
-          </div>
+            <div class="col s4 m4 l4 alignementColonne" ng-repeat='activite in vm.activites'>
+                <i class="medium material-icons" ng-class="$index%2==0 ? 'orangeColor' : 'purpleColor'">{{activite.logoActivite}}</i>
+                <h5>{{activite.titreActivite}}</h5>
+                <div class="description" ng-bind-html="activite.descriptionActivite"></div>
+            </div>
         </div>
     </div>
 </div>
