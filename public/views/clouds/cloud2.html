@@ -5,14 +5,25 @@
     <hr/>
     <!--Fil d'actualités facebook-->
     <div class="col s12 cadre" id="facebook">
-        <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLa-Mam-aux-Tr%25C3%25A9sors-%25C3%25A0-R%25C3%25A9malard-555980124540600%2F&tabs=timeline&width=1000&height=800&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
-            width="500"
-            height="800"
+        <div
+            class="fb-page center"
+            data-href="https://www.facebook.com/La-Mam-aux-Tr%C3%A9sors-%C3%A0-R%C3%A9malard-555980124540600/"
+            data-tabs="timeline"
+            data-width="500"
+            data-height="400"
+            data-small-header="true"
             data-adapt-container-width="true"
-            style="border:none;overflow:hidden"
-            scrolling="no"
-            frameborder="0"
-            allowTransparency="true"></iframe>
+            data-hide-cover="false"
+            data-show-facepile="false">
+            <blockquote cite="https://www.facebook.com/La-Mam-aux-Tr%C3%A9sors-%C3%A0-R%C3%A9malard-555980124540600/" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/La-Mam-aux-Tr%C3%A9sors-%C3%A0-R%C3%A9malard-555980124540600/">La Mam aux Trésors à Rémalard</a>
+            </blockquote>
+        </div>
+        <script>
+            var TIMEOUT = window.setTimeout(function() {
+                TIMEOUT = null;
+                $('.fb-page').removeClass('fb_iframe_widget fb_iframe_widget_fluid');
+            }, 1000);
+        </script>
     </div>
 </div>

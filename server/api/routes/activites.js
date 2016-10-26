@@ -1,4 +1,5 @@
 import express from 'express';
+import Auth from '../middlewares/authorization.js';
 import Activite from '../models/activite.js';
 
 let router = express.Router();
@@ -11,11 +12,11 @@ module.exports = (app) => {
 
     router.get('/:id', activite.findById);
 
-    router.post('/', activite.create);
+    router.post('/', Auth.hasAuthorization, activite.create);
 
-    router.put('/:id', activite.update);
+    router.put('/:id', Auth.hasAuthorization, activite.update);
 
-    router.delete('/:id', activite.delete);
+    router.delete('/:id', Auth.hasAuthorization, activite.delete);
 
     app.use('/activites', router);
 

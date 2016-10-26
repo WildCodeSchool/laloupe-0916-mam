@@ -1,7 +1,6 @@
 class navbarController {
 
     constructor(sessionFactory, $rootScope, $window, $location) {
-        /*
           this.isLogged = sessionFactory.isLogged;
           this.sessionFactory = sessionFactory;
           this.$rootScope = $rootScope;
@@ -10,8 +9,7 @@ class navbarController {
           $rootScope.$on('loginStatusChanged', (event, isLogged) => {
               this.isLogged = isLogged;
               this.user = sessionFactory.user;
-          })
-          */
+          });
         $(".button-collapse").sideNav();
 
         $('.js-scrollTo').on('click', function() { // Au clic sur un élément
