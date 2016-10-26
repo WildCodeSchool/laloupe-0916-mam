@@ -368,6 +368,8 @@ h4 {
     padding: 0 5px 0 5px;
 }
 
+/*Partie admnistrable et login*/
+
 .admninistration, .login {
     background-color: #B4D4FF;
     min-height: 100vh;
