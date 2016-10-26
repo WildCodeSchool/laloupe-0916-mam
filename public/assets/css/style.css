@@ -1,4 +1,5 @@
 /*Ensemble de la page*/
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
 
 
 /*Bannière présentation*/
+
 #titre {
     font-family: 'Amatic SC', cursive;
     color: #2196f3;
@@ -58,9 +60,11 @@ h2 {
     font-weight: bold;
 }
 
+
 /*Barre de navigation*/
 
-.fixed-top { /*Classe créée dans /Directives/navabarFix.js*/
+.fixed-top {
+    /*Classe créée dans /Directives/navabarFix.js*/
     top: 0;
     position: fixed;
     z-index: 100000000;
@@ -77,6 +81,7 @@ h2 {
     font-weight: bold;
 }
 
+
 /*Barre de navigation mobile*/
 
 .side-nav {
@@ -84,43 +89,43 @@ h2 {
 }
 
 .cloud {
-	width: 220px;
-  height: 60px;
-
-	background: #6291CF;
-
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-
-	position: relative;
-	margin: 120px auto 20px;
+    width: 220px;
+    height: 60px;
+    background: #6291CF;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    position: relative;
+    margin: 120px auto 20px;
 }
 
 .cloud:after, .cloud:before {
-	content: '';
-	position: absolute;
-	background: #6291CF;
-	z-index: -1
+    content: '';
+    position: absolute;
+    background: #6291CF;
+    z-index: -1
 }
 
 .cloud:after {
-	width: 120px; height: 120px;
-	top: -70px; left: 80px;
-
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    top: -70px;
+    left: 80px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
 }
 
 .cloud:before {
-	width: 75px; height: 75px;
-	top: -40px; right: 125px;
-
-	border-radius: 200px;
-	-webkit-border-radius: 200px;
-	-moz-border-radius: 200px;
+    width: 75px;
+    height: 75px;
+    top: -40px;
+    right: 125px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
 }
+
 
 /*Intérieur des nuages*/
 
@@ -150,7 +155,9 @@ h3 {
     margin: 0;
 }
 
+
 /*Nuage 1*/
+
 #Presentation {
     padding: 10px 40px 10px 40px;
     text-align: center;
@@ -185,7 +192,9 @@ h3 {
     text-align: justify;
 }
 
+
 /*Nuage3*/
+
 .carousel {
     align-content: center;
     border: 5px solid #2196f3;
@@ -193,9 +202,6 @@ h3 {
     width: 700px;
     margin: 0 auto;
 }
-
-
-
 
 h4 {
     font-family: 'Amatic SC', cursive;
@@ -220,10 +226,10 @@ p {
     font-size: 18px;
 }
 
-#facebook{
-    text-align:left;
+#facebook {
+    text-align: left;
     margin: 0 auto;
-    display:block;
+    display: block;
 }
 
 .material-icons.orangeColor {
@@ -260,20 +266,20 @@ p {
 
 .imagePartenaires {
     width: 2/*Carousels*/
-
-.carouselright {
-    align-content: center;
-    border: 5px solid #2196f3;
-    margin-bottom: -10px;
-    width: 700px;
-    margin: 0 auto;
-}
-00px;
+    .carouselright {
+        align-content: center;
+        border: 5px solid #2196f3;
+        margin-bottom: -10px;
+        width: 700px;
+        margin: 0 auto;
+    }
+    00px;
     height: 200px;
     margin-top: 20px;
     margin-bottom: 40px;
     border: 2px #A8C6FA solid;
 }
+
 
 /*Positionnement des nuages*/
 
@@ -290,8 +296,6 @@ p {
     margin-top: -6px;
     width: 100%;
 }
-
-
 
 
 /*Footer*/
@@ -342,7 +346,7 @@ footer {
 .lesPGM p {
     color: grey;
     font-size: 22px;
-    vertical-align : sub;
+    vertical-align: sub;
 }
 
 .logoModal6 {
@@ -368,6 +372,7 @@ footer {
     border: 2px #1e88e5 solid;
 }
 
+
 /*Partie admnistrable*/
 
 .admninistration {
@@ -386,11 +391,11 @@ footer {
 }
 
 .retourAdmin {
-  vertical-align: middle!important;
-  font-size:22px;
-  text-align: center;
-  color: #1e88e5;
-  font-weight: bold;
+    vertical-align: middle!important;
+    font-size: 22px;
+    text-align: center;
+    color: #1e88e5;
+    font-weight: bold;
 }
 
 .boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {

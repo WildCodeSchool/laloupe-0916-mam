@@ -43,7 +43,7 @@ class createPartenaire {
         if (!partenaire.descriptionPartenaire)
             partenaire.descriptionPartenaire = "&nbsp;";
 
-        partenaireService.create(this.partenaire.logoPartenaire, this.partenaire.titrePartenaire, this.partenaire.descriptionPartenaire).then(() => {
+        this.partenaireService.create(partenaire.logoPartenaire, partenaire.titrePartenaire,partenaire.descriptionPartenaire).then(() => {
             this.partenaire = {};
             this.load()
         })
