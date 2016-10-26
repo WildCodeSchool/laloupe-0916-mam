@@ -352,7 +352,7 @@ footer {
 
 /*Partie admnistrable*/
 
-.admninistration {
+.admninistration, .login{
     background-color: #B4D4FF;
     min-height: 100vh;
 }
@@ -361,7 +361,7 @@ footer {
     font-size: 50px;
 }
 
-.contenuAdmin {
+.contenuAdmin, .contenuLogin {
     background-color: white;
     padding-top: 25px;
     padding-bottom: 30px;
@@ -399,6 +399,15 @@ footer {
 
 .nuagebasadmin img {
     margin-top: -14px;
+    width: 100%;
+}
+
+.nuagehautlogin img {
+    margin-bottom: -6px;
+    width: 100%
+}
+
+.nuagebaslogin img {
     width: 100%;
 }
 
