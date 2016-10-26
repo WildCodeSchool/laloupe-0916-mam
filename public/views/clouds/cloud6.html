@@ -5,32 +5,10 @@
     <h3>Nos Partenaires</h3>
     <hr/>
     <div class="cadre">
-        <div class="col s3 m3 l3 presentationPartenaires">
-            <img src="assets/img/creditagricole.jpg" alt="creditagricole" class="imagePartenaires">
-            <h5>Crédit agricole</h5>
-        </div>
-        <div class="col s3 m3 l3 presentationPartenaires">
-          <img src="assets/img/remalard.jpg" alt="Remalard" class="imagePartenaires">
-          <h5>Mairie de Rémalard-en-Perche</h5>
-        </div>
-        <div class="col s3 m3 l3 presentationPartenaires">
-          <img src="assets/img/fromentinedecoupee.png" alt="Boulangerie" class="imagePartenaires">
-          <h5>La Fromentine</h5>
-          <p>Amandine & Jonathan MEZIERES</p>
-        </div>
-        <div class="col s3 m3 l3 presentationPartenaires">
-          <img src="assets/img/JLC.png" alt="JLC" class="imagePartenaires">
-          <h5>JL Conditionnement</h5>
-        </div>
-        <div class="col s3 m3 l3 presentationPartenaires">
-          <img src="assets/img/couvreur.jpg" alt="Boulangerie" class="imagePartenaires">
-          <h5>Jérôme MAILLARD</h5>
-          <p>Artisan couvreur</p>
-        </div>
-        <div class="col s3 m3 l3 presentationPartenaires">
-          <img src="assets/img/TL.jpg" alt="vin" class="imagePartenaires">
-          <h5>Thierry LAURENS</h5>
-          <p>Buveur de vin</p>
+        <div class="col s3 m3 l3 presentationPartenaires" ng-repeat='partenaire in vm.partenaires'>
+            <img src="{{partenaire.logoPartenaire}}" alt="partenaires" class="imagePartenaires">
+            <h5>{{partenaire.titrePartenaire}}</h5>
+            <p ng-bind-html='partenaire.descriptionPartenaire'></p>
         </div>
     </div>
 </div>
