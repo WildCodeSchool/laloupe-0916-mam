@@ -19,20 +19,6 @@
         <link href="./assets/css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div id="fb-root"></div>
-        <script>
-            (function(d, s, id) {
-                var js,
-                    fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id))
-                    return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8&appId=207183279704907";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-
         <ng-include src="'views/navbar.html'"></ng-include>
 
         <ng-view></ng-view>
@@ -44,7 +30,6 @@
         <script src="vendor/angular/angular.min.js"></script>
         <script src="vendor/angular-route/angular-route.min.js"></script>
         <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
-        <script src="http://pc035860.github.io/angular-easyfb/angular-easyfb.min.js"></script>
 
         <script src="js/factories/sessionFactory.js"></script>
 
@@ -53,6 +38,7 @@
         <script src="js/services/partenaireService.js"></script>
         <script src="js/services/userService.js"></script>
         <script src="js/services/todoService.js"></script>
+
         <script src="js/controllers/navbarController.js"></script>
         <script src="js/controllers/mainController.js"></script>
         <script src="js/controllers/editActivity.js"></script>
@@ -61,6 +47,7 @@
         <script src="js/controllers/deletePartenaire.js"></script>
         <script src="js/controllers/adminController.js"></script>
         <script src="js/controllers/loginController.js"></script>
+
         <script src="js/directives/navbarFix.js"></script>
         <script src="js/directives/findImage.js"></script>
         <script src="js/routes.js"></script>

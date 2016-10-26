@@ -1,21 +1,23 @@
+<!--Espace administration : Modifier la partie activités-->
 <div class="admninistration">
     <br><br>
-
+    <!--Haut du nuage-->
     <div class="nuagehautadmin">
         <img src="assets/img/nuageblanc.png">
     </div>
-
+    <!--Titre + retour à la page admin-->
     <div class="contenuAdmin">
         <h3>Modifier une activité</h3>
         <div class="retourAdmin">
             <a href="/#/admin">
-                <i class="material-icons">input</i> Retour à la page admin
+                <i class="material-icons">input</i>
+                Retour à la page admin
             </a>
         </div>
+        <!--Modification des parties activités-->
         <div class="cadre">
             <div class="row">
                 <form ng-repeat='activite in vm.activites'>
-
                     <div class="col s4 alignementColonne">
                         <i class="medium material-icons" ng-class="$index%2==0 ? 'orangeColor' : 'purpleColor'">{{activite.logoActivite}}</i>
                         <input placeholder="Titre" type="text" ng-model='activite.titreActivite'>
@@ -27,6 +29,7 @@
             </div>
         </div>
     </div>
+    <!--Bas du nuage-->
     <div class="nuagebasadmin">
         <img src="assets/img/nuageblancinverse.png">
     </div>

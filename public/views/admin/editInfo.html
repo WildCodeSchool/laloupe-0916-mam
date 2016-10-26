@@ -1,17 +1,20 @@
+<!--Espace administration : modofication de la partie infos pratiques-->
 <div class="admninistration">
     <br><br>
-
+    <!--Haut du nuage-->
     <div class="nuagehautadmin">
         <img src="assets/img/nuageblanc.png">
     </div>
-
+    <!--titre + retour à la page d'administration-->
     <div class="contenuAdmin">
         <h3>Modifier une info</h3>
         <div class="retourAdmin">
             <a href="/#/admin">
-                <i class="material-icons">input</i> Retour à la page admin
+                <i class="material-icons">input</i>
+                Retour à la page admin
             </a>
         </div>
+        <!--Modification de la partie infos pratiques-->
         <div class="cadre">
             <div class="row">
                 <form ng-repeat='info in vm.infos'>
@@ -20,11 +23,11 @@
                         <textarea placeholder="description" class="materialize-textarea" ng-model='info.descriptionInfo'></textarea>
                         <button ng-click='vm.update(info)' onclick="Materialize.toast('L\'info a bien été modifiée', 4000)" class="btn waves-effect waves-light blue">modifier</button>
                     </div>
-
                 </form>
             </div>
         </div>
     </div>
+    <!--Bas du nuage-->
     <div class="nuagebasadmin">
         <img src="assets/img/nuageblancinverse.png">
     </div>

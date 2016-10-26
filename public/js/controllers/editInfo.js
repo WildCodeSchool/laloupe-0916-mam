@@ -1,7 +1,7 @@
 class editInfo {
     constructor(infoService) {
-      this.infoService = infoService;
-      this.load();
+        this.infoService = infoService;
+        this.load();
     }
     load() {
         this.infoService.getAll().then((res) => {
@@ -9,7 +9,7 @@ class editInfo {
         })
     }
     update(info) {
-        this.infoService.update(info._id, info.logoInfo,info.descriptionInfo).then(() => {
+        this.infoService.update(info._id, info.logoInfo, info.descriptionInfo).then(() => {
             this.load()
         })
     }
