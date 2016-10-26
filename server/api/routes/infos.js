@@ -1,4 +1,5 @@
 import express from 'express';
+import Auth from '../middlewares/authorization.js';
 import Info from '../models/info.js';
 
 let router = express.Router();
@@ -11,11 +12,11 @@ module.exports = (app) => {
 
     router.get('/:id', info.findById);
 
-    router.post('/', info.create);
+    router.post('/', Auth.hasAuthorization, info.create);
 
-    router.put('/:id', info.update);
+    router.put('/:id', Auth.hasAuthorization, info.update);
 
-    router.delete('/:id', info.delete);
+    router.delete('/:id', Auth.hasAuthorization, info.delete);
 
     app.use('/infos', router);
 

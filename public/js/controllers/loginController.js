@@ -44,7 +44,7 @@ class loginController {
             this.loginMessage.message = "Redirecting..."
             this.$timeout(() => {
                 this.loginMessage = null
-                this.$location.path('/')
+                this.$location.path('/admin')
             }, 2000);
         }).catch((res) => {
             this.sessionFactory.isLogged = false
