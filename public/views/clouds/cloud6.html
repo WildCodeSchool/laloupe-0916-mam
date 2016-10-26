@@ -5,7 +5,7 @@
     <h3>Nos Partenaires</h3>
     <hr/>
     <div class="cadre">
-        <div class="col s3 m3 l3 presentationPartenaires" ng-repeat='partenaire in vm.partenaires'>
+        <div class="col s12 m6 l3 presentationPartenaires" ng-repeat='partenaire in vm.partenaires'>
             <img src="{{partenaire.logoPartenaire}}" alt="partenaires" class="imagePartenaires">
             <h5>{{partenaire.titrePartenaire}}</h5>
             <p ng-bind-html='partenaire.descriptionPartenaire'></p>
