@@ -1,0 +1,44 @@
+<div class="admninistration">
+    <br><br>
+
+    <div class="nuagehautadmin">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+
+    <div class="contenuAdmin">
+        <h3>Ajouter un partenaire</h3>
+        <div class="retourAdmin">
+            <a href="/#/admin">
+                <i class="material-icons">input</i> Retour à la page admin
+            </a>
+        </div>
+        <div class="cadre row">
+
+            <div class="col s3 m3 l3 presentationPartenaires" ng-repeat='partenaire in vm.partenaires'>
+                <img src="{{partenaire.logoPartenaire}}" alt="partenaires" class="imagePartenaires">
+                <h5>{{partenaire.titrePartenaire}}</h5>
+                <p ng-bind-html='partenaire.descriptionPartenaire'></p>
+            </div>
+            <div class="col s3 m3 l3 alignementColonne">
+                <form action="/api/picture" enctype="multipart/form-data" method="post">
+                    <div class="file-field input-field">
+                        <div class="btn blue">
+                            <span>Parcourir..</span>
+                            <input file-upload type="file" placeholder="Image" id="uploadImage" name='file'>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                    <input id="titrePart" placeholder="Titre" type="text" ng-model='partenaire.titrePartenaire'>
+                    <input id="descPart" placeholder="Description" type="text" ng-model='partenaire.descriptionPartenaire'>
+                </form>
+                <button ng-click='vm.create(partenaire)' onclick="Materialize.toast('Le partenaire a bien été ajouté', 4000)" class="btn waves-effect waves-light blue">ajouter</button>
+            </div>
+        </div>
+    </div>
+    <div class="nuagebasadmin">
+        <img src="assets/img/nuageblancinverse.png">
+    </div>
+    <br>
+</div>

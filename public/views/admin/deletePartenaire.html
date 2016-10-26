@@ -1,0 +1,29 @@
+<div class="admninistration">
+    <br><br>
+
+    <div class="nuagehautadmin">
+        <img src="assets/img/nuageblanc.png">
+    </div>
+
+    <div class="contenuAdmin">
+        <h3>Suppression d'un partenaire</h3>
+        <div class="retourAdmin">
+            <a href="/#/admin">
+                <i class="material-icons">input</i> Retour à la page admin
+            </a>
+        </div>
+        <div class="cadre row">
+            <div class="col s3 m3 l3 presentationPartenaires" ng-repeat='partenaire in vm.partenaires'>
+                <img src="{{partenaire.logoPartenaire}}" alt="partenaires" class="imagePartenaires">
+                <h5>{{partenaire.titrePartenaire}}</h5>
+                <p ng-bind-html='partenaire.descriptionPartenaire'></p>
+                <button ng-click='vm.delete(partenaire)' onclick="Materialize.toast('Le partenaire a bien été supprimé', 4000)" class="btn waves-effect waves-light blue">supprimer</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="nuagebasadmin">
+        <img src="assets/img/nuageblancinverse.png">
+    </div>
+    <br>
+</div>

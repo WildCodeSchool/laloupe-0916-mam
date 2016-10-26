@@ -1,6 +1,6 @@
 class mainController {
 
-    constructor(activiteService, infoService, $sce) {
+    constructor(activiteService, infoService, partenaireService) {
         // /*this.todoService = todoService;
         // this.load();*/
         //
@@ -16,10 +16,24 @@ class mainController {
         // ezfb.api('/me', function(res) {
         //     $scope.apiMe = res;
         // });
+        var TIMEOUT = null;
+        $(window).on('resize', function() {
+            if (TIMEOUT === null) {
+                TIMEOUT = window.setTimeout(function() {
+                    TIMEOUT = null;
+                    //fb_iframe_widget class is added after first FB.FXBML.parse()
+                    //fb_iframe_widget_fluid is added in same situation, but only for mobile devices (tablets, phones)
+                    //By removing those classes FB.XFBML.parse() will reset the plugin widths.
+                    $('.fb-page').removeClass('fb_iframe_widget fb_iframe_widget_fluid');
+                    $('.fb-page').removeClass('fb-xfbml-parse-ignore');
+                    FB.XFBML.parse();
+                }, 300);
+            }
+        });
 
         this.activiteService = activiteService;
         this.infoService = infoService;
-        this.$sce = $sce;
+        this.partenaireService = partenaireService;
         this.load();
     }
 
@@ -34,31 +48,34 @@ class mainController {
         $('.modal5').leanModal();
         $('.modal6').leanModal();
     }
-carousel() {
-    $('.carousel.carousel-slider').carousel({
-        full_width: true
-    });
-    autoplay();
+    carousel() {
+        $('.carousel.carousel-slider').carousel({
+            full_width: true
+        });
+        autoplay();
 
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 4500);
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 4500);
+        }
     }
-}
 
-load() {
+    load() {
         this.activiteService.getAll().then((res) => {
             this.activites = res.data;
             this.activites.forEach((e, i) => {
-                this.activites[i].descriptionActivite = this.$sce.trustAsHtml(e.descriptionActivite.replace(new RegExp('\r?\n', 'g'), '<br />'));
+                this.activites[i].descriptionActivite = e.descriptionActivite.replace(new RegExp('\r?\n', 'g'), '<br />');
             })
         });
         this.infoService.getAll().then((res) => {
             this.infos = res.data;
             this.infos.forEach((e, i) => {
-                this.infos[i].descriptionInfo = this.$sce.trustAsHtml(e.descriptionInfo.replace(new RegExp('\r?\n', 'g'), '<br />'));
+                this.infos[i].descriptionInfo = e.descriptionInfo.replace(new RegExp('\r?\n', 'g'), '<br />');
             })
         });
+        this.partenaireService.getAll().then((res) => {
+            this.partenaires = res.data;
+        })
     }
 
     /*
@@ -66,17 +83,7 @@ load() {
     load() {
         this.todoService.getAll().then((res) => {
             this.todos = res.data;
-        })carousel() {
-    $('.carousel.carousel-slider').carousel({
-        full_width: true
-    });
-    autoplay();
-
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 4500);
-    }
-}
+        })
     }
 
     create() {
