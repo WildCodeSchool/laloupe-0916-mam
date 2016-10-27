@@ -2,29 +2,23 @@
 <header ng-controller='navbarController as vm'>
     <!--Entete : Logo MAM + titre + coordonnées-->
     <div class="row">
-        <div id="titre" class="col s12">
-            <div class="col s2 hide-on-small-only">
-                <!--Logo-->
-                <img src="assets/img/logo.jpg" id="petitlogo" alt=""/>
-            </div>
-            <!--Titre + coordonnées-->
-            <div class="col s8 offset-2">
+            <!--Logo + Titre + coordonnées-->
+            <div id="titre" class="col s12">
                 <!--Titre-->
-                <h1>
+                <h1 class="center"><img src="assets/img/logo.jpg" id="petitlogo"/>
                     LA<span>
                         MAM</span>
                     AUX
                     <span>TRÉSORS</span>
                 </h1>
                 <!--Coordonnées-->
-                <h2>3 place du Champ de Foire 61 100 RÉMALARD-EN-PERCHE</h2>
-                <p class="contact"><img src="assets/img/phone.png" class="pimage" alt="phone"/>
+                <h2 class="center" >3 place du Champ de Foire 61 100 RÉMALARD-EN-PERCHE</h2>
+                <p class="contact center"><img src="assets/img/phone.png" class="pimage" alt="phone"/>
                     <span id="telephone">
                         02.33.25.87.42
                     </span><img src="assets/img/mail.png" class="pimage" alt="mail"/>
                     lamamauxtresorsremalard@gmail.com</p>
             </div>
-        </div>
     </div>
     <!--Barre de navigation-->
     <nav class="navbar" navbar-fix>
