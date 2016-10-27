@@ -22,8 +22,8 @@ Frontend : es2015 native
 #### Installation
 
 ```bash
-git clone git@github.com:JbPasquier/mean-starter-es6.git
-cd mean-starter-es6
+git clone git@github.com:WildCodeSchool/laloupe-0916-mam.git
+cd laloupe-0916-mam
 npm install
 bower install
 ```
@@ -37,5 +37,5 @@ nodemon --exec npm start
 #### Production
 
 ```bash
-SECRET_TOKEN='secretToken' MONGODB_URI='mongodb://localhost:27017/mean-starter-es6' npm start
+SECRET_TOKEN='secretToken' MONGODB_URI='mongodb://localhost:27017/dbMam' npm start
 ```
