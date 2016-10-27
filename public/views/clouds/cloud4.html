@@ -4,10 +4,10 @@
     <div class="col s12">
         <h3>Infos pratiques</h3>
         <hr/>
-        <div class="cadre">
+        <div class="cadre parties">
             <!-- Infos : les horaires, les tarifs, les infos pratiques-->
             <div class="row">
-                <div class="col s4 m4 l4 alignementColonne" ng-repeat='info in vm.infos'>
+                <div class="col s12 m12 l4 alignementColonne" ng-repeat='info in vm.infos'>
                     <i class="medium material-icons" ng-class="$index%2==0 ? 'orangeColor' : 'purpleColor'">{{info.logoInfo}}</i>
                     <div class="description" ng-bind-html="info.descriptionInfo"></div>
                 </div>
