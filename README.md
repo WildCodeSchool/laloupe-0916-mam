@@ -1,4 +1,6 @@
-# [MEAN](http://mean.io/) Starter kit
+# [La mam aux trésors](http://www.lamamauxtresorsremalard.com/) Site internet pour la MAM aux trésors de Rémalard
+
+### La team de développeurs : Gaëlle MORIN, Johan HELIAS et Sylvain LABARRE
 
 Backend : Babel es2015
 
