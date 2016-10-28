@@ -5,13 +5,10 @@
     padding: 0;
 }
 
-.page {
-    min-height: 44vh;
-}
-
 body {
     font-family: 'Poiret One', cursive;
 }
+
 
 /*Bannière présentation*/
 
@@ -60,9 +57,11 @@ h2 {
     font-weight: bold;
 }
 
+
 /*Barre de navigation*/
 
-.fixed-top { /*Classe créée dans /Directives/navabarFix.js*/
+.fixed-top {
+    /*Classe créée dans /Directives/navabarFix.js*/
     top: 0;
     position: fixed;
     z-index: 100000000;
@@ -79,6 +78,7 @@ h2 {
     font-weight: bold;
 }
 
+
 /*Barre de navigation mobile*/
 
 .side-nav a {
@@ -88,6 +88,11 @@ h2 {
 
 .side-nav {
     background-color: #FFFFFF;
+    width: 150px;
+    height: 580px;
+    margin: 15% 0 2% 0;
+    padding: 0;
+    box-shadow: inherit;
 }
 
 .cloud {
@@ -98,7 +103,7 @@ h2 {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     position: relative;
-    margin: 50px auto 20px;
+    margin: 40px auto 20px;
 }
 
 .cloud:after, .cloud:before {
@@ -128,21 +133,23 @@ h2 {
     -moz-border-radius: 200px;
 }
 
+
 /*Positionnement des nuages*/
 
 .nuagehaut {
     position: absolute;
     bottom: 0;
-    margin-bottom: -7px;
+    margin-bottom: -9px;
     width: 100%;
 }
 
 .nuagebas {
     position: absolute;
     top: 0;
-    margin-top: -6px;
+    margin-top: -8px;
     width: 100%;
 }
+
 
 /*Intérieur des nuages*/
 
@@ -182,6 +189,7 @@ p {
     font-size: 18px;
 }
 
+
 /*Nuage 1*/
 
 #Presentation {
@@ -218,6 +226,7 @@ p {
     text-align: justify;
 }
 
+
 /*Nuage3*/
 
 .carousel {
@@ -226,8 +235,9 @@ p {
     margin-bottom: -10px;
     width: 700px;
     margin: 0 auto;
-    max-width : 100%;
+    max-width: 100%;
 }
+
 
 /*Nuages 4 et 5*/
 
@@ -258,9 +268,7 @@ p {
 }
 
 #facebook {
-    text-align: left;
-    margin: 0 auto;
-    display: block;
+    margin: 30px 15px 15px 15px;
 }
 
 .material-icons.orangeColor {
@@ -277,6 +285,7 @@ p {
     text-align: justify;
     padding: 40px;
 }
+
 
 /*Nuage 6*/
 
@@ -295,6 +304,7 @@ p {
     border: 2px #A8C6FA solid;
 }
 
+
 /*Carousels*/
 
 .carouselright {
@@ -304,6 +314,7 @@ p {
     width: 700px;
     margin: 0 auto;
 }
+
 
 /*Positionnement des nuages*/
 
@@ -320,6 +331,7 @@ p {
     margin-top: -6px;
     width: 100%;
 }
+
 
 /*Footer*/
 
@@ -349,6 +361,7 @@ footer {
     text-decoration: none;
 }
 
+
 /*Modale Mentions légales*/
 
 .MLCGU h6 {
@@ -363,6 +376,7 @@ footer {
     font-size: 20px;
     text-align: left;
 }
+
 
 /*Modale des développeurs*/
 
@@ -381,7 +395,7 @@ footer {
     color: #1e88e5;
 }
 
-.alignmodal{
+.alignmodal {
     padding-top: 10px;
 }
 
@@ -402,6 +416,7 @@ footer {
     margin: 0;
     padding: 0;
 }
+
 
 /*Pages Login et administration*/
 
@@ -495,21 +510,119 @@ textarea {
     background-color: #2196F3;
 }
 
-@media screen and (min-width: 200px) and (max-width: 992px){
 
-  .row .parties {
-    display: flex;
-    flex-direction: column;
-  }
+/*Responsive*/
 
-  #petitlogo {
-    display: none;
-  }
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .row .parties {
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel {
+        align-content: center;
+        border: 0;
+        height: auto;
+        max-width: 100 %p {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            text-align: left;
+        }
+        margin: 0;
+        padding: 0;
+    }
+    #petitlogo {
+        display: none;
+    }
+    h1 {
+        font-size: 75px;
+        margin: 0;
+        padding-top: -17px;
+        font-weight: bold;
+        color: #E84E0C;
+    }
+    h1 span {
+        color: #B814B2;
+    }
+    h2 {
+        font-size: 35px;
+        margin: 5px 5px 5px 5px;
+    }
+    .contact {
+        font-family: 'Amatic SC', cursive;
+        font-size: 30px;
+        margin: 0;
+    }
+    .pimage {
+        width: 35px;
+        height: 35px;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        text-align: left;
+    }
+}
 
-  .carousel {
-      align-content: center;
-      border: 0;
-      height:auto;
-      max-width: 100 %
-  }
+@media (max-width: 600px) {
+    .row .parties {
+        display: flex;
+        flex-direction: column;
+    }
+    #petitlogo {
+        display: none;
+    }
+    .carousel {
+        align-content: center;
+        border: 0;
+        height: auto;
+        max-width: 100 % margin: 0;
+        padding: 0;
+    }
+    h1 {
+        font-size: 45px;
+        margin: 0;
+        padding-top: -17px;
+        font-weight: bold;
+        color: #E84E0C;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    h1 span {
+        color: #B814B2;
+        font-weight: bold;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+    .contact {
+        font-family: 'Amatic SC', cursive;
+        font-size: 20px;
+        margin: 0;
+        font-weight: bold;
+    }
+    .pimage {
+        width: 22px;
+        height: 22px;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        text-align: left;
+    }
+    #Presentation, .textmodal, .parties, #MLCGU {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .background{
+      background-color: #E84E0C;
+    }
 }

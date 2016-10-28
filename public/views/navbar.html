@@ -2,99 +2,99 @@
 <header ng-controller='navbarController as vm'>
     <!--Entete : Logo MAM + titre + coordonnées-->
     <div class="row">
-            <!--Logo + Titre + coordonnées-->
-            <div id="titre" class="col s12">
-                <!--Titre-->
-                <h1 class="center"><img src="assets/img/logo.jpg" id="petitlogo"/>
-                    LA<span>
-                        MAM</span>
-                    AUX
-                    <span>TRÉSORS</span>
-                </h1>
-                <!--Coordonnées-->
-                <h2 class="center" >3 place du Champ de Foire 61 100 RÉMALARD-EN-PERCHE</h2>
-                <p class="contact center"><img src="assets/img/phone.png" class="pimage" alt="phone"/>
-                    <span id="telephone">
-                        02.33.25.87.42
-                    </span><img src="assets/img/mail.png" class="pimage" alt="mail"/>
-                    lamamauxtresorsremalard@gmail.com</p>
-            </div>
+        <!--Logo + Titre + coordonnées-->
+        <div id="titre" class="col s12">
+            <!--Titre-->
+            <h1 class="center"><img src="assets/img/logo.jpg" id="petitlogo"/>
+                LA<span>
+                    MAM</span>
+                AUX
+                <span>TRÉSORS</span>
+            </h1>
+            <!--Coordonnées-->
+            <h2 class="center">3 place du Champ de Foire 61 100 RÉMALARD-EN-PERCHE</h2>
+            <p class="contact center"><img src="assets/img/phone.png" class="pimage" alt="phone"/>
+                <span id="telephone">
+                    02.33.25.87.42
+                </span><img src="assets/img/mail.png" class="pimage" alt="mail"/>
+                lamamauxtresorsremalard@gmail.com</p>
+        </div>
     </div>
     <!--Barre de navigation-->
-    <nav class="navbar" navbar-fix>
-        <div class="nav-wrapper blue">
-            <a href="#" data-activates="mobile-demo" class="button-collapse">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li>
-                    <a class="js-scrollTo" href="#titre">Accueil</a>
-                </li>
-                <li>
-                    <a class="js-scrollTo" href="#nuage1">Qui sommes-nous ?</a>
-                </li>
-                <li>
-                    <a class="js-scrollTo" href="#nuage2">Actualités</a>
-                </li>
-                <li>
-                    <a class="js-scrollTo" href="#nuage3">Locaux</a>
-                </li>
-                <li>
-                    <a class="js-scrollTo" href="#nuage4">Infos pratiques</a>
-                </li>
-                <li>
-                    <a class="js-scrollTo" href="#nuage5">Activités</a>
-                </li>
-                <li>
-                    <a class="js-scrollTo" href="#nuage6">Partenaires</a>
-                </li>
-                <li ng-show='vm.isLogged'>
-                    <a href="/#/" ng-click='vm.logout()'>Se déconnecter</a>
-                </li>
-            </ul>
-            <!--NAVBAR pour mobile-->
-            <ul class="side-nav" id="mobile-demo">
-                <li>
-                    <div class="cloud">
-                        <a class="js-scrollTo center" href="#titre">Accueil</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="cloud">
-                        <a class="js-scrollTo center" href="#nuage1">Présentation</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="cloud">
-                        <a class="js-scrollTo center" href="#nuage2">Actualités</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="cloud">
-                        <a class="js-scrollTo center" href="#nuage3">Locaux</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="cloud">
-                        <a class="js-scrollTo center" href="#nuage4">Infos</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="cloud">
-                        <a class="js-scrollTo center" href="#nuage5">Activités</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="cloud">
-                        <a class="js-scrollTo center" href="#nuage6">Partenaires</a>
-                    </div>
-                </li>
-                <li ng-show='vm.isLogged'>
-                    <div class="cloud">
-                        <a class='center' href="/#/" ng-click='vm.logout()'>Se déconnecter</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <nav class="navbar" navbar-fix>
+            <div class="nav-wrapper blue">
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li>
+                        <a class="js-scrollTo" href="#titre">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="js-scrollTo" href="#nuage1">Qui sommes-nous ?</a>
+                    </li>
+                    <li>
+                        <a class="js-scrollTo" href="#nuage2">Actualités</a>
+                    </li>
+                    <li>
+                        <a class="js-scrollTo" href="#nuage3">Locaux</a>
+                    </li>
+                    <li>
+                        <a class="js-scrollTo" href="#nuage4">Infos pratiques</a>
+                    </li>
+                    <li>
+                        <a class="js-scrollTo" href="#nuage5">Activités</a>
+                    </li>
+                    <li>
+                        <a class="js-scrollTo" href="#nuage6">Partenaires</a>
+                    </li>
+                    <li ng-show='vm.isLogged'>
+                        <a href="/#/" ng-click='vm.logout()'>Se déconnecter</a>
+                    </li>
+                </ul>
+                <!--NAVBAR pour mobile-->
+                <ul class="side-nav transparent" id="mobile-demo">
+                    <li>
+                        <div class="cloud">
+                            <a class="js-scrollTo center" href="#titre">Accueil</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cloud">
+                            <a class="js-scrollTo center" href="#nuage1">Présentation</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cloud">
+                            <a class="js-scrollTo center" href="#nuage2">Actualités</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div ="cloud class">
+                            <a class="js-scrollTo center" href="#nuage3">Locaux</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cloud">
+                            <a class="js-scrollTo center" href="#nuage4">Infos</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cloud">
+                            <a class="js-scrollTo center" href="#nuage5">Activités</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cloud">
+                            <a class="js-scrollTo center" href="#nuage6">Partenaires</a>
+                        </div>
+                    </li>
+                    <li ng-show='vm.isLogged'>
+                        <div class="cloud">
+                            <a class='center' href="/#/" ng-click='vm.logout()'>Se déconnecter</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 </header>
