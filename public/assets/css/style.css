@@ -609,20 +609,15 @@ textarea {
         width: 22px;
         height: 22px;
     }
-    p {
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
-        text-align: left;
-    }
+
     #Presentation, .textmodal, .parties, #MLCGU {
         margin: 0;
         padding: 0;
         font-size: 14px;
         text-align: left;
     }
-
-    .background{
-      background-color: #E84E0C;
+    .dev{
+        text-align: center;
     }
+
 }
