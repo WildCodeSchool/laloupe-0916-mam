@@ -24,8 +24,8 @@ class loginController {
             this.$rootScope.$emit('loginStatusChanged', false)
             this.loginMessage = {}
             this.loginMessage.type = "error"
-            this.loginMessage.title = "Sign in error"
-            this.loginMessage.message = "Error login or password"
+            this.loginMessage.title = "Erreur d'identification"
+            this.loginMessage.message = "Erreur d'identifiant ou de mot de passe"
         });
     }
 
@@ -40,8 +40,8 @@ class loginController {
             this.$rootScope.$emit('loginStatusChanged', true)
             this.loginMessage = {}
             this.loginMessage.type = "success"
-            this.loginMessage.title = "Account created !"
-            this.loginMessage.message = "Redirecting..."
+            this.loginMessage.title = "Compte créé !"
+            this.loginMessage.message = "Redirection..."
             this.$timeout(() => {
                 this.loginMessage = null
                 this.$location.path('/admin')
@@ -51,7 +51,7 @@ class loginController {
             this.$rootScope.$emit('loginStatusChanged', false)
             this.loginMessage = {}
             this.loginMessage.type = "error"
-            this.loginMessage.title = "Sign up error"
+            this.loginMessage.title = "Erreur de création de compte"
             this.loginMessage.message = res.data
         });
     }
