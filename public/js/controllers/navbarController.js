@@ -10,7 +10,7 @@ class navbarController {
               this.isLogged = isLogged;
               this.user = sessionFactory.user;
           });
-        $(".button-collapse").sideNav();
+        $(".button-collapse").sideNav({closeOnClick : true });
 
         $('.js-scrollTo').on('click', function() { // Au clic sur un élément
             var page = $(this).attr('href'); // Page cible
