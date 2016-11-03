@@ -1,631 +1,593 @@
-/*Ensemble de la page*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Poiret One', cursive;
-}
-
-
-/*Bannière présentation*/
-
-#titre {
-    font-family: 'Amatic SC', cursive;
-    color: #2196f3;
-    top: -250px;
-}
-
-#petitlogo {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    top: 35px;
-    left: 15px;
-}
-
-h1 {
-    font-size: 100px;
-    margin: 0;
-    font-weight: bold;
-    color: #E84E0C;
-}
-
-h1 span {
-    color: #B814B2;
-}
-
-h2 {
-    font-size: 55px;
-    margin: 5px 5px 5px 5px;
-}
-
-.contact {
-    font-family: 'Amatic SC', cursive;
-    font-size: 40px;
-    margin: 0;
-}
-
-.pimage {
-    width: 45px;
-    height: 45px;
-}
-
-#telephone {
-    font-weight: bold;
-}
-
-
-/*Barre de navigation*/
-
-.fixed-top {
-    /*Classe créée dans /Directives/navabarFix.js*/
-    top: 0;
-    position: fixed;
-    z-index: 100000000;
-}
-
-.nav-wrapper {
-    background-color: #6291CF;
-}
-
-.nav-wrapper a {
-    font-family: 'Amatic SC', cursive;
-    color: #FFFFFF;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-
-/*Barre de navigation mobile*/
-
-.side-nav a {
-    font-family: 'Poiret One', cursive;
-    font-size: 20px;
-}
-
-.side-nav {
-    background-color: #FFFFFF;
-    width: 150px;
-    height: 580px;
-    margin: 15% 0 2% 0;
-    padding: 0;
-    box-shadow: inherit;
-}
-
-.cloud {
-    width: 130px;
-    height: 40px;
-    background: #6291CF;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    position: relative;
-    margin: 40px auto 20px;
-}
-
-.cloud:after, .cloud:before {
-    content: '';
-    position: absolute;
-    background: #6291CF;
-    z-index: -1
-}
-
-.cloud:after {
-    width: 55px;
-    height: 55px;
-    top: -28px;
-    left: 55px;
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-}
-
-.cloud:before {
-    width: 40px;
-    height: 40px;
-    top: -22px;
-    right: 70px;
-    border-radius: 200px;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-}
-
-
-/*Positionnement des nuages*/
-
-.nuagehaut {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: -9px;
-    width: 100%;
-}
-
-.nuagebas {
-    position: absolute;
-    top: 0;
-    margin-top: -8px;
-    width: 100%;
-}
-
-
-/*Intérieur des nuages*/
-
-.cadre {
-    margin: 30px 30px 30px 30px;
-    background-color: white;
-    padding: 10px 10px 10px 10px;
-    font-weight: bold;
-    color: #1e88e5;
-    font-size: 16px;
-}
-
-hr {
-    height: 1px;
-    margin: 0px 600px 0px 600px;
-    color: #2196f3;
-    background-color: #2196f3;
-    border: 0;
-}
-
-h3 {
-    font-family: 'Amatic SC', cursive;
-    color: #1e88e5;
-    font-weight: bold;
-    text-align: center;
-    padding: 0 0 5px 0;
-    margin: 0;
-}
-
-h5 {
-    color: #1e88e5;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-p {
-    font-size: 18px;
-}
-
-
-/*Nuage 1*/
-
-#Presentation {
-    padding: 10px 40px 10px 40px;
-    text-align: center;
-    color: #2196f3;
-    font-weight: bold;
-}
-
-.PresentationMAM {
-    text-align: center;
-    color: #2196f3;
-    font-weight: bold;
-    font-size : 18px;
-}
-
-.imagemam {
-    width: 250px;
-    height: 187px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px #A8C6FA solid;
-}
-
-.imagemodal {
-    width: 300px;
-    height: 225px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px #A8C6FA solid;
-}
-
-.textmodal {
-    margin: 30px 50px 0px 50px;
-    text-align: center;
-    font-size: 18px;
-}
-
-
-/*Nuage3*/
-
-.carousel {
-    align-content: center;
-    border: 5px solid #2196f3;
-    margin-bottom: -10px;
-    width: 700px;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-
-/*Nuages 4 et 5*/
-
-.alignementColonne {
-    text-align: center;
-}
-
-h4 {
-    font-family: 'Amatic SC', cursive;
-    color: #1e88e5;
-    background-color: #FFFFFF;
-    font-size: 35px;
-    font-weight: bold;
-    display: inline-block;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 65px;
-    padding: 0 5px 0 5px;
-}
-
-h5 {
-    color: #1e88e5;
-    font-weight: bold;
-}
-
-p {
-    font-size: 18px;
-}
-
-#facebook {
-    margin: 30px 15px 15px 15px;
-}
-
-.material-icons.orangeColor {
-    color: #FF340D;
-}
-
-.material-icons.purpleColor {
-    color: #950094;
-}
-
-.description {
-    margin-top: 20px;
-    margin-bottom: 0;
-    text-align: justify;
-    padding: 40px;
-}
-
-
-/*Nuage 6*/
-
-.presentationPartenaires {
-    text-align: center;
-    color: #1e88e5;
-    font-weight: bold;
-    min-height: 370px!important;
-}
-
-.imagePartenaires {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    border: 2px #A8C6FA solid;
-}
-
-
-/*Carousels*/
-
-.carouselright {
-    align-content: center;
-    border: 5px solid #2196f3;
-    margin-bottom: -10px;
-    width: 700px;
-    margin: 0 auto;
-}
-
-
-/*Positionnement des nuages*/
-
-.nuagehaut {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: -7px;
-    width: 100%;
-}
-
-.nuagebas {
-    position: absolute;
-    top: 0;
-    margin-top: -6px;
-    width: 100%;
-}
-
-
-/*Footer*/
-
-footer {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    bottom: 0;
-    padding: 1px 1px 1px 1px;
-    background-color: #2196f3;
-    color: white;
-}
-
-#ML {
-    color: white;
-    text-decoration: none;
-}
-
-#logowcs {
-    height: 20px;
-    width: 20px;
-}
-
-.modal6 {
-    color: white;
-    text-decoration: none;
-}
-
-
-/*Modale Mentions légales*/
-
-.MLCGU h6 {
-    color: #1e88e5;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: left;
-}
-
-.MLCGU p {
-    color: grey;
-    font-size: 20px;
-    text-align: left;
-}
-
-
-/*Modale des développeurs*/
-
-.lesPGM p {
-    color: grey;
-    font-size: 22px;
-}
-
-.logoModal6 {
-    height: 20px;
-    width: 20px;
-
-}
-
-.lesPGM h5 {
-    font-size: 35px;
-    color: #1e88e5;
-    margin-bottom: 10px;
-}
-
-.alignmodal {
-    padding-top: 10px;
-}
-
-.photomodalfooter {
-    width: 60px;
-    height: 60px;
-    border: 2px #1e88e5 solid;
-}
-
-.logoModal6 {
-    height: 20px;
-    width: 20px;
-}
-
-#logoWcsModal {
-    height: 100px;
-    width: 100px;
-    margin: 0;
-    padding: 0;
-}
-
-h6{
-    font-size: 22px;
-    color: #1e88e5;
-}
-
-/*Pages Login et administration*/
-
-h4 {
-    font-family: 'Amatic SC', cursive;
-    color: #1e88e5;
-    background-color: #FFFFFF;
-    font-size: 35px;
-    font-weight: bold;
-    display: inline-block;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 65px;
-    padding: 0 5px 0 5px;
-}
-
-
-/*Partie admnistrable et login*/
-
-.admninistration, .login {
-    background-color: #B4D4FF;
-    min-height: 100vh;
-}
-
-.admninistration h3 {
-    font-size: 50px;
-}
-
-.contenuAdmin, .contenuLogin {
-    background-color: white;
-    padding-top: 25px;
-    padding-bottom: 30px;
-}
-
-.retourAdmin {
-    vertical-align: middle!important;
-    font-size: 22px;
-    text-align: center;
-    color: #1e88e5;
-    font-weight: bold;
-}
-
-.boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
-    text-align: center;
-}
-
-.boutonAdmin a, .boutonAdmin button {
-    font-size: 20px;
-    font-weight: bold;
-    align-content: center;
-}
-
-#modifActivites a, #modifInfosPratiques a, #modifPartenaires a {
-    font-size: 18px;
-    height: 45px;
-    align-content: center;
-}
-
-.nuagehautadmin img {
-    margin-bottom: -19px;
-    width: 100%;
-}
-
-.nuagebasadmin img {
-    margin-top: -14px;
-    width: 100%;
-}
-
-.nuagehautlogin img {
-    margin-bottom: -6px;
-    width: 100%
-}
-
-.nuagebaslogin img {
-    width: 100%;
-}
-
-textarea {
-    height: 80px!important;
-}
-
-.btn-large.orangeColor {
-    background-color: #FF340D;
-}
-
-.btn-large.purpleColor {
-    background-color: #950094;
-}
-
-.btn-large.blueColor {
-    background-color: #2196F3;
-}
-
-
-/*Responsive*/
-
-@media screen and (min-width: 600px) and (max-width: 992px) {
-    .row .parties {
-        display: flex;
-        flex-direction: column;
+    /*Ensemble de la page*/
+
+    * {
+        margin: 0;
+        padding: 0;
     }
+
+    body {
+        font-family: 'Poiret One', cursive;
+    }
+    /*Bannière présentation*/
+
+    #titre {
+        font-family: 'Amatic SC', cursive;
+        color: #2196f3;
+        top: -250px;
+    }
+
+    #petitlogo {
+        width: 160px;
+        height: 160px;
+        position: relative;
+        top: 35px;
+        left: 15px;
+    }
+
+    h1 {
+        font-size: 100px;
+        margin: 0;
+        font-weight: bold;
+        color: #E84E0C;
+    }
+
+    h1 span {
+        color: #B814B2;
+    }
+
+    h2 {
+        font-size: 55px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .contact {
+        font-family: 'Amatic SC', cursive;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .pimage {
+        width: 45px;
+        height: 45px;
+    }
+
+    #telephone {
+        font-weight: bold;
+    }
+    /*Barre de navigation*/
+
+    .fixed-top {
+        /*Classe créée dans /Directives/navabarFix.js*/
+        top: 0;
+        position: fixed;
+        z-index: 100000000;
+    }
+
+    .nav-wrapper {
+        background-color: #6291CF;
+    }
+
+    .nav-wrapper a {
+        font-family: 'Amatic SC', cursive;
+        color: #FFFFFF;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    /*Barre de navigation mobile*/
+
+    .side-nav a {
+        font-family: 'Poiret One', cursive;
+        font-size: 20px;
+    }
+
+    .side-nav {
+        background-color: #FFFFFF;
+        width: 150px;
+        height: 580px;
+        margin: 15% 0 2% 0;
+        padding: 0;
+        box-shadow: inherit;
+    }
+
+    .cloud {
+        width: 130px;
+        height: 40px;
+        background: #6291CF;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        position: relative;
+        margin: 40px auto 20px;
+    }
+
+    .cloud:after, .cloud:before {
+        content: '';
+        position: absolute;
+        background: #6291CF;
+        z-index: -1
+    }
+
+    .cloud:after {
+        width: 55px;
+        height: 55px;
+        top: -28px;
+        left: 55px;
+        border-radius: 200px;
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+    }
+
+    .cloud:before {
+        width: 40px;
+        height: 40px;
+        top: -22px;
+        right: 70px;
+        border-radius: 200px;
+        -webkit-border-radius: 200px;
+        -moz-border-radius: 200px;
+    }
+    /*Positionnement des nuages*/
+
+    .nuagehaut {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -9px;
+        width: 100%;
+    }
+
+    .nuagebas {
+        position: absolute;
+        top: 0;
+        margin-top: -8px;
+        width: 100%;
+    }
+    /*Intérieur des nuages*/
+
+    .cadre {
+        margin: 30px 30px 30px 30px;
+        background-color: white;
+        padding: 10px 10px 10px 10px;
+        font-weight: bold;
+        color: #1e88e5;
+        font-size: 16px;
+    }
+
+    hr {
+        height: 1px;
+        margin: 0px 600px 0px 600px;
+        color: #2196f3;
+        background-color: #2196f3;
+        border: 0;
+    }
+
+    h3 {
+        font-family: 'Amatic SC', cursive;
+        color: #1e88e5;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 0 5px 0;
+        margin: 0;
+    }
+
+    h5 {
+        color: #1e88e5;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    /*Nuage 1*/
+
+    #Presentation {
+        padding: 10px 40px 10px 40px;
+        text-align: center;
+        color: #2196f3;
+        font-weight: bold;
+    }
+
+    .PresentationMAM {
+        text-align: center;
+        color: #2196f3;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .imagemam {
+        width: 250px;
+        height: 187px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 2px #A8C6FA solid;
+    }
+
+    .imagemodal {
+        width: 300px;
+        height: 225px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 2px #A8C6FA solid;
+    }
+
+    .textmodal {
+        margin: 30px 50px 0px 50px;
+        text-align: center;
+        font-size: 18px;
+    }
+    /*Nuage3*/
+
     .carousel {
         align-content: center;
-        border: 0;
-        height: auto;
-        max-width: 100 %p {
+        border: 5px solid #2196f3;
+        margin-bottom: -10px;
+        width: 700px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    /*Nuages 4 et 5*/
+
+    .alignementColonne {
+        text-align: center;
+    }
+
+    h4 {
+        font-family: 'Amatic SC', cursive;
+        color: #1e88e5;
+        background-color: #FFFFFF;
+        font-size: 35px;
+        font-weight: bold;
+        display: inline-block;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 65px;
+        padding: 0 5px 0 5px;
+    }
+
+    h5 {
+        color: #1e88e5;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #facebook {
+        margin: 30px 15px 15px 15px;
+    }
+
+    .material-icons.orangeColor {
+        color: #FF340D;
+    }
+
+    .material-icons.purpleColor {
+        color: #950094;
+    }
+
+    .description {
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: justify;
+        padding: 40px;
+    }
+    /*Nuage 6*/
+
+    .presentationPartenaires {
+        text-align: center;
+        color: #1e88e5;
+        font-weight: bold;
+        min-height: 370px!important;
+    }
+
+    .imagePartenaires {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        border: 2px #A8C6FA solid;
+    }
+    /*Carousels*/
+
+    .carouselright {
+        align-content: center;
+        border: 5px solid #2196f3;
+        margin-bottom: -10px;
+        width: 700px;
+        margin: 0 auto;
+    }
+    /*Positionnement des nuages*/
+
+    .nuagehaut {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -7px;
+        width: 100%;
+    }
+
+    .nuagebas {
+        position: absolute;
+        top: 0;
+        margin-top: -6px;
+        width: 100%;
+    }
+    /*Footer*/
+
+    footer {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        bottom: 0;
+        padding: 1px 1px 1px 1px;
+        background-color: #2196f3;
+        color: white;
+    }
+
+    #ML {
+        color: white;
+        text-decoration: none;
+    }
+
+    #logowcs {
+        height: 20px;
+        width: 20px;
+    }
+
+    .modal6 {
+        color: white;
+        text-decoration: none;
+    }
+    /*Modale Mentions légales*/
+
+    .MLCGU h6 {
+        color: #1e88e5;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .MLCGU p {
+        color: grey;
+        font-size: 20px;
+        text-align: left;
+    }
+    /*Modale des développeurs*/
+
+    .lesPGM p {
+        color: grey;
+        font-size: 22px;
+    }
+
+    .logoModal6 {
+        height: 20px;
+        width: 20px;
+    }
+
+    .lesPGM h5 {
+        font-size: 35px;
+        color: #1e88e5;
+        margin-bottom: 10px;
+    }
+
+    .alignmodal {
+        padding-top: 10px;
+    }
+
+    .photomodalfooter {
+        width: 60px;
+        height: 60px;
+        border: 2px #1e88e5 solid;
+    }
+
+    .logoModal6 {
+        height: 20px;
+        width: 20px;
+    }
+
+    #logoWcsModal {
+        height: 100px;
+        width: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h6 {
+        font-size: 22px;
+        color: #1e88e5;
+    }
+    /*Pages Login et administration*/
+
+    h4 {
+        font-family: 'Amatic SC', cursive;
+        color: #1e88e5;
+        background-color: #FFFFFF;
+        font-size: 35px;
+        font-weight: bold;
+        display: inline-block;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 65px;
+        padding: 0 5px 0 5px;
+    }
+    /*Partie admnistrable et login*/
+
+    .admninistration, .login {
+        background-color: #B4D4FF;
+        min-height: 100vh;
+    }
+
+    .admninistration h3 {
+        font-size: 50px;
+    }
+
+    .contenuAdmin, .contenuLogin {
+        background-color: white;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .retourAdmin {
+        vertical-align: middle!important;
+        font-size: 22px;
+        text-align: center;
+        color: #1e88e5;
+        font-weight: bold;
+    }
+
+    .boutonAdmin, #modifActivites, #modifInfosPratiques, #modifPartenaires {
+        text-align: center;
+    }
+
+    .boutonAdmin a, .boutonAdmin button {
+        font-size: 20px;
+        font-weight: bold;
+        align-content: center;
+    }
+
+    #modifActivites a, #modifInfosPratiques a, #modifPartenaires a {
+        font-size: 18px;
+        height: 45px;
+        align-content: center;
+    }
+
+    .nuagehautadmin img {
+        margin-bottom: -19px;
+        width: 100%;
+    }
+
+    .nuagebasadmin img {
+        margin-top: -14px;
+        width: 100%;
+    }
+
+    .nuagehautlogin img {
+        margin-bottom: -6px;
+        width: 100%
+    }
+
+    .nuagebaslogin img {
+        width: 100%;
+    }
+
+    textarea {
+        height: 80px!important;
+    }
+
+    .btn-large.orangeColor {
+        background-color: #FF340D;
+    }
+
+    .btn-large.purpleColor {
+        background-color: #950094;
+    }
+
+    .btn-large.blueColor {
+        background-color: #2196F3;
+    }
+    /*Responsive*/
+
+    @media screen and (min-width: 600px) and (max-width: 992px) {
+        .row .parties {
+            display: flex;
+            flex-direction: column;
+        }
+        .carousel {
+            align-content: center;
+            border: 0;
+            height: auto;
+            max-width: 100%;
             margin: 0;
             padding: 0;
             font-size: 14px;
             text-align: left;
         }
-        margin: 0;
-        padding: 0;
-    }
-    #petitlogo {
-        display: none;
-    }
-    h1 {
-        font-size: 75px;
-        margin: 0;
-        padding-top: -17px;
-        font-weight: bold;
-        color: #E84E0C;
-    }
-    h1 span {
-        color: #B814B2;
-    }
-    h2 {
-        font-size: 35px;
-        margin: 5px 5px 5px 5px;
-    }
-    .contact {
-        font-family: 'Amatic SC', cursive;
-        font-size: 30px;
-        margin: 0;
-    }
-    .pimage {
-        width: 35px;
-        height: 35px;
-    }
-    p {
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
-        text-align: left;
-    }
-}
-
-@media (max-width: 600px) {
-    .row .parties {
-        display: flex;
-        flex-direction: column;
-    }
-    #petitlogo {
-        display: none;
-    }
-    .carousel {
-        align-content: center;
-        border: 0;
-        height: auto;
-        max-width: 100 % margin: 0;
-        padding: 0;
-    }
-    h1 {
-        font-size: 45px;
-        margin: 0;
-        padding-top: -17px;
-        font-weight: bold;
-        color: #E84E0C;
-        margin: 0;
-        padding: 0;
-        text-align: left;
-    }
-    h1 span {
-        color: #B814B2;
-        font-weight: bold;
-    }
-    h2 {
-        font-weight: bold;
-        font-size: 25px;
-        margin: 5px 5px 5px 5px;
-    }
-    .contact {
-        font-family: 'Amatic SC', cursive;
-        font-size: 20px;
-        margin: 0;
-        font-weight: bold;
-    }
-    .pimage {
-        width: 22px;
-        height: 22px;
+        #petitlogo {
+            display: none;
+        }
+        h1 {
+            font-size: 75px;
+            margin: 0;
+            padding-top: -17px;
+            font-weight: bold;
+            color: #E84E0C;
+        }
+        h1 span {
+            color: #B814B2;
+        }
+        h2 {
+            font-size: 35px;
+            margin: 5px 5px 5px 5px;
+        }
+        .contact {
+            font-family: 'Amatic SC', cursive;
+            font-size: 30px;
+            margin: 0;
+        }
+        .pimage {
+            width: 35px;
+            height: 35px;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            text-align: left;
+        }
     }
 
-    #Presentation, .textmodal, .parties, #MLCGU {
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
-        text-align: left;
+    @media (max-width: 600px) {
+        .row .parties {
+            display: flex;
+            flex-direction: column;
+        }
+        #petitlogo {
+            display: none;
+        }
+        .carousel {
+            align-content: center;
+            border: 0;
+            height: auto;
+            max-width: 100 %;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 45px;
+            margin: 0;
+            padding-top: -17px;
+            font-weight: bold;
+            color: #E84E0C;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        h1 span {
+            color: #B814B2;
+            font-weight: bold;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 25px;
+            margin: 5px 5px 5px 5px;
+        }
+        .contact {
+            font-family: 'Amatic SC', cursive;
+            font-size: 20px;
+            margin: 0;
+            font-weight: bold;
+        }
+        .pimage {
+            width: 22px;
+            height: 22px;
+        }
+        #Presentation, .textmodal, .parties, #MLCGU {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            text-align: left;
+        }
+        .dev {
+            text-align: center;
+        }
     }
-    .dev{
-        text-align: center;
-    }
-
-}
