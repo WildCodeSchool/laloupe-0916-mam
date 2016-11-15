@@ -3,6 +3,10 @@ class createPartenaire {
         this.partenaireService = partenaireService;
         this.partenaire = {}
         this.load();
+        this.tinymceOptions = {
+            toolbar: "forecolor | insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+            plugins: 'advlist fullscreen autolink link image lists charmap autoresize textcolor'
+        };
 
         function uploadFile(file) {
             var url = '/api/picture';

@@ -1,4 +1,4 @@
-angular.module('app', ['ngRoute', 'ngSanitize'])
+angular.module('app', ['ngRoute', 'ngSanitize', 'ui.tinymce'])
     .factory('sessionFactory', sessionFactory)
     .service('userService', userService)
     .service('todoService', todoService)
