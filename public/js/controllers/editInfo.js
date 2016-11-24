@@ -1,14 +1,14 @@
-class editInfo {
-    constructor(infoService) {
+function editInfo (infoService) {
+
         this.infoService = infoService;
         this.load();
-    }
-    load() {
+    
+    load = () => {
         this.infoService.getAll().then((res) => {
             this.infos = res.data;
         })
     }
-    update(info) {
+    update = (info) => {
         this.infoService.update(info._id, info.logoInfo, info.descriptionInfo).then(() => {
             this.load()
         })
