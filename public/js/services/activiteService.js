@@ -1,18 +1,16 @@
-class activiteService {
+function activiteService($http) {
 
-    constructor($http) {
         this.$http = $http;
-    }
 
-    getAll() {
+    const getAll = () => {
         return this.$http.get('/api/activites')
     }
 
-    getOne(id) {
+    const getOne = (id) => {
         return this.$http.get('/api/activites/' + id)
     }
 
-    update(id, logo, title, descr) {
+    const update = (id, logo, title, descr) => {
         return this.$http.put('/api/activites/' + id, {
             logoActivite: logo,
             titreActivite: title,
