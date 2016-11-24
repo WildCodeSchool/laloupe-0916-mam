@@ -1,11 +1,9 @@
-class mainController {
+function mainController (activiteService, infoService, partenaireService) {
 
-    constructor(activiteService, infoService, partenaireService) {
         this.activiteService = activiteService;
         this.infoService = infoService;
         this.partenaireService = partenaireService;
         this.load();
-    }
 
     carouselparallax() {
         $('.parallax').parallax();
@@ -29,7 +27,7 @@ class mainController {
         }
     }
 
-    load() {
+    load = () => {
         this.activiteService.getAll().then((res) => {
             this.activites = res.data;
             this.activites.forEach((e, i) => {
