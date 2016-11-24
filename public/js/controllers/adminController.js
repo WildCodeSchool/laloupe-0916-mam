@@ -1,4 +1,4 @@
-class adminController {
+function (adminController) {
     constructor() {
         $("#boutonActivites").click(function() {
             $("#modifInfosPratiques").hide();
