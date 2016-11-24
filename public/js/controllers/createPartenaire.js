@@ -1,6 +1,6 @@
 function createPartenaire(partenaireService) {
     this.partenaireService = partenaireService;
-    this.partenaire = {}
+    this.partenaire = {};
 
     function uploadFile(file) {
         var url = '/api/picture';
@@ -15,7 +15,7 @@ function createPartenaire(partenaireService) {
         };
         fd.append("upload_file", file);
         xhr.send(fd);
-    };
+    }
 
     var uploadfiles = document.querySelector('#uploadImage');
     uploadfiles.addEventListener('change', function() {
@@ -25,13 +25,13 @@ function createPartenaire(partenaireService) {
         }
     }, false);
 
-    const load = () => {
+    this.load = () => {
         this.partenaireService.getAll().then((res) => {
             this.partenaires = res.data;
-        })
-    }
+        });
+    };
 
-    const create = (partenaire) => {
+    this.create = (partenaire) => {
         var urlImage = '/uploads/img_' + document.getElementById('uploadImage').value.split(/(\|\/)/g).pop().replace('C:\\fakepath\\', '');
         console.log(urlImage);
         partenaire.logoPartenaire = urlImage;
@@ -41,14 +41,14 @@ function createPartenaire(partenaireService) {
 
         this.partenaireService.create(partenaire.logoPartenaire, partenaire.titrePartenaire,partenaire.descriptionPartenaire).then(() => {
             this.partenaire = {};
-            this.load()
-        })
-    }
+            this.load();
+        });
+    };
 
-    const delete = (partenaire) => {
+    this.delete = (partenaire) => {
         this.partenaireService.delete(partenaire._id, partenaire.logoPartenaire, partenaire.titrePartenaire, partenaire.descriptionPartenaire).then(() => {
-            this.load()
-        })
-    }
+            this.load();
+        });
+    };
     this.load();
 }

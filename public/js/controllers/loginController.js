@@ -5,7 +5,7 @@ function loginController (userService, sessionFactory, $timeout, $location, $roo
         this.$location = $location;
         this.$rootScope = $rootScope;
 
-    const login = () => {
+    this.login = () => {
         this.userService.connect({
             email: this.email,
             password: this.password
@@ -26,7 +26,7 @@ function loginController (userService, sessionFactory, $timeout, $location, $roo
         });
     }
 
-    const createAccount = () => {
+    this.createAccount = () => {
         this.userService.create({
             email: this.email,
             password: this.password

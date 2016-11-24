@@ -1,29 +1,29 @@
 function userService($http) {
 
-        this.$http = $http;
+    this.$http = $http;
 
-    const connect = (data) => {
-        return this.$http.post('/api/login', data)
-    }
+    this.connect = (data) => {
+        return this.$http.post('/api/login', data);
+    };
 
-    const create = (user) => {
-        return this.$http.post('/api/users', user)
-    }
+    this.create = (user) => {
+        return this.$http.post('/api/users', user);
+    };
 
-    const getAll = () => {
-        return this.$http.get('/api/users')
-    }
+    this.getAll = () => {
+        return this.$http.get('/api/users');
+    };
 
-    const getOne = (id) => {
-        return this.$http.get('/api/users/' + id)
-    }
+    this.getOne = (id) => {
+        return this.$http.get('/api/users/' + id);
+    };
 
-    const update = (id, user) => {
-        return this.$http.put('/api/users/' + id, user)
-    }
+    this.update = (id, user) => {
+        return this.$http.put('/api/users/' + id, user);
+    };
 
-    const delete = (id) => {
-        return this.$http.put('/api/users/' + id)
-    }
-    
+    this.delete = (id) => {
+        return this.$http.put('/api/users/' + id);
+    };
+
 }
