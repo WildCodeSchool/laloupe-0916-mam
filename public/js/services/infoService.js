@@ -1,18 +1,16 @@
-class infoService {
+function infoService($http) {
 
-    constructor($http) {
         this.$http = $http;
-    }
 
-    getAll() {
+    const getAll = () => {
         return this.$http.get('/api/infos')
     }
 
-    getOne(id) {
+    const getOne = (id) => {
         return this.$http.get('/api/infos/' + id)
     }
 
-    update(id, logo, descr) {
+    const update = (id, logo, descr) => {
         return this.$http.put('/api/infos/' + id, {
             logoInfo: logo,
             descriptionInfo: descr
