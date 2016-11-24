@@ -1,14 +1,13 @@
-class deletePartenaire {
-    constructor(partenaireService) {
+function deletePartenaire(partenaireService) {
         this.partenaireService = partenaireService;
         this.load();
-    }
-    load() {
+
+    const load = () => {
         this.partenaireService.getAll().then((res) => {
             this.partenaires = res.data;
         })
     }
-    delete(partenaire) {
+    const delete = (partenaire) => {
         this.partenaireService.delete(partenaire._id, partenaire.logoPartenaire, partenaire.titrePartenaire, partenaire.descriptionPartenaire).then(() => {
             this.load()
         })
