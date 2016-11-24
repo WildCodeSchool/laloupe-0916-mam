@@ -1,10 +1,8 @@
-class partenaireService {
+function partenaireService($http) {
 
-    constructor($http) {
         this.$http = $http;
-    }
 
-    create(logo, title, descr) {
+   function create(logo, title, descr) {
         return this.$http.post('/api/partenaires', {
             logoPartenaire: logo,
             titrePartenaire: title,
@@ -12,15 +10,15 @@ class partenaireService {
         })
     }
 
-    getAll() {
+    const getAll = () => {
         return this.$http.get('/api/partenaires')
     }
 
-    getOne(id) {
+    const getOne = (id) => {
         return this.$http.get('/api/partenaires/' + id)
     }
 
-    delete(id) {
+    const delete = (id) => {
         return this.$http.delete('/api/partenaires/' + id)
     }
 
