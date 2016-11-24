@@ -1,31 +1,29 @@
-class userService {
+function userService($http) {
 
-    constructor($http) {
         this.$http = $http;
-    }
 
-    connect(data) {
+    const connect = (data) => {
         return this.$http.post('/api/login', data)
     }
 
-    create(user) {
+    const create = (user) => {
         return this.$http.post('/api/users', user)
     }
 
-    getAll() {
+    const getAll = () => {
         return this.$http.get('/api/users')
     }
 
-    getOne(id) {
+    const getOne = (id) => {
         return this.$http.get('/api/users/' + id)
     }
 
-    update(id, user) {
+    const update = (id, user) => {
         return this.$http.put('/api/users/' + id, user)
     }
 
-    delete(id) {
+    const delete = (id) => {
         return this.$http.put('/api/users/' + id)
     }
-
+    
 }
