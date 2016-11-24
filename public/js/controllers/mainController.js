@@ -27,7 +27,7 @@ function mainController (activiteService, infoService, partenaireService) {
         }
     }
 
-    load = () => {
+    const load = () => {
         this.activiteService.getAll().then((res) => {
             this.activites = res.data;
             this.activites.forEach((e, i) => {
