@@ -1,6 +1,5 @@
-class navbarController {
+function navbarController(sessionFactory, $rootScope, $window, $location)  {
 
-    constructor(sessionFactory, $rootScope, $window, $location) {
           this.isLogged = sessionFactory.isLogged;
           this.sessionFactory = sessionFactory;
           this.$rootScope = $rootScope;
@@ -20,9 +19,8 @@ class navbarController {
             }, speed); // Go
             return false;
         });
-    }
 
-    logout() {
+    const logout = () => {
         this.sessionFactory.isLogged = false;
         this.sessionFactory.user = {};
         this.sessionFactory.token = null;
