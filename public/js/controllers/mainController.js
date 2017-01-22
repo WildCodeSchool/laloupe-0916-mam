@@ -34,16 +34,16 @@ class mainController {
             this.activites = res.data;
             this.activites.forEach((e, i) => {
                 this.activites[i].descriptionActivite = e.descriptionActivite.replace(new RegExp('\r?\n', 'g'), '<br />');
-            })
+            });
         });
         this.infoService.getAll().then((res) => {
             this.infos = res.data;
             this.infos.forEach((e, i) => {
                 this.infos[i].descriptionInfo = e.descriptionInfo.replace(new RegExp('\r?\n', 'g'), '<br />');
-            })
+            });
         });
         this.partenaireService.getAll().then((res) => {
             this.partenaires = res.data;
-        })
+        });
     }
 }

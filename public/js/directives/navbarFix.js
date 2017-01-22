@@ -3,9 +3,8 @@ function navbarFix($window) {
 
     return {
         restrict: 'A',
-        // 'A' - only matches attribute name
         link: function(scope, element, attrs) {
-            var offsetTop = element.offset().top - 115; // get element's offset top relative to document
+            var offsetTop = element.offset().top - 115;
 
             $win.on('scroll', function(e) {
                 if ($win.scrollTop() >= offsetTop) {

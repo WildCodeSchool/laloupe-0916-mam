@@ -8,9 +8,9 @@ module.exports = function(app) {
         mmm = require('mmmagic').Magic;
 
     app.post('/picture', function(req, res) {
-      /*
-        Change wdth & hgth as needed, post any image to /api/picture and it'll be saved to public/upload/
-      */
+        /*
+          Change wdth & hgth as needed, post any image to /api/picture and it'll be saved to public/upload/
+        */
 
         var
             wdth = 200,

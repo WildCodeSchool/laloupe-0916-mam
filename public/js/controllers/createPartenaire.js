@@ -1,7 +1,7 @@
 class createPartenaire {
     constructor(partenaireService) {
         this.partenaireService = partenaireService;
-        this.partenaire = {}
+        this.partenaire = {};
         this.load();
 
         function uploadFile(file) {
@@ -17,7 +17,7 @@ class createPartenaire {
             };
             fd.append("upload_file", file);
             xhr.send(fd);
-        };
+        }
 
         var uploadfiles = document.querySelector('#uploadImage');
         uploadfiles.addEventListener('change', function() {
@@ -32,7 +32,7 @@ class createPartenaire {
     load() {
         this.partenaireService.getAll().then((res) => {
             this.partenaires = res.data;
-        })
+        });
     }
 
     create(partenaire) {
@@ -45,13 +45,13 @@ class createPartenaire {
 
         this.partenaireService.create(partenaire.logoPartenaire, partenaire.titrePartenaire,partenaire.descriptionPartenaire).then(() => {
             this.partenaire = {};
-            this.load()
-        })
+            this.load();
+        });
     }
 
     delete(partenaire) {
         this.partenaireService.delete(partenaire._id, partenaire.logoPartenaire, partenaire.titrePartenaire, partenaire.descriptionPartenaire).then(() => {
-            this.load()
-        })
+            this.load();
+        });
     }
 }
