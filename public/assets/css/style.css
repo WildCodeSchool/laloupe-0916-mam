@@ -500,6 +500,7 @@
     .btn-large.blueColor {
         background-color: #2196F3;
     }
+
     /*Responsive*/
 
     @media screen and (min-width: 600px) and (max-width: 992px) {

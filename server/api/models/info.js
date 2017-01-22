@@ -65,6 +65,6 @@ export default class Info {
             } else {
                 res.sendStatus(200);
             }
-        })
+        });
     }
 }

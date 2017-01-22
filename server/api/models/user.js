@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         required: 'Email address is required',
         validate: [function(email) {
-            return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+            return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
         }, 'Please fill a valid email address'],
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address'],
         unique: true
@@ -69,9 +69,9 @@ export default class User {
                             } else {
                                 res.status(400).send('Incorrect password');
                             }
-                        };
+                        }
                     });
-                };
+                }
             });
         }
     }
@@ -151,6 +151,6 @@ export default class User {
             } else {
                 res.sendStatus(200);
             }
-        })
+        });
     }
 }
